@@ -4,11 +4,10 @@ import Layout from '../layouts/Layout.astro';
 import BootLoader from '../components/BootLoader.astro';
 import FastfetchHero from '../components/FastfetchHero.astro';
 import Prompt from '../components/Prompt.astro';
-import { profile, skills, experiences, projects, education } from '../data/portfolio';
+import { profile, skills, experiences, projects, education, remotes } from '../data/portfolio';
 ---
 <Layout title="fajre@portfolio:~">
   <BootLoader />
-
   <main class="container">
 
     <FastfetchHero />
@@ -41,6 +40,8 @@ import { profile, skills, experiences, projects, education } from '../data/portf
               <span class="indicator"></span>
               <span class="perms">{exp.perms}</span>
               <span class="date">{exp.date}</span>
+              <span class="file">{exp.company}</span>
+              <span class="text-muted">({exp.format})</span>
               <span class="folder">{exp.folder}</span>
             </summary>
             <div class="expanded-content prose">
@@ -59,11 +60,11 @@ import { profile, skills, experiences, projects, education } from '../data/portf
             <summary class="list-item">
               <span class="indicator"></span>
               <span class="perms">{proj.perms}</span>
-              <span class="size">{proj.size}</span>
-              <a href={proj.link} target="_blank" class="file hover-link">{proj.file}</a>
+              <span class="file">{proj.file}</span>
             </summary>
             <div class="expanded-content prose">
               <p>{proj.content}</p>
+              <p>>> <a href={proj.link} target="_blank" class="hover-link">Link do Repositório</a></p>
             </div>
           </details>
         ))}
@@ -79,7 +80,8 @@ import { profile, skills, experiences, projects, education } from '../data/portf
               <span class="indicator"></span>
               <span class="perms">{edu.perms}</span>
               <span class="date">{edu.date}</span>
-              <span class="folder">{edu.folder}</span>
+              <span class="file">{edu.institution}</span>
+              <span class="text-muted">({edu.format})</span> <span class="folder">{edu.folder}</span>
             </summary>
             <div class="expanded-content prose">
               <p>{edu.content}</p>
@@ -92,12 +94,12 @@ import { profile, skills, experiences, projects, education } from '../data/portf
     <section>
       <Prompt cmd="git remote -v" />
       <div class="tui-list">
-        <div class="list-item">
-          <span class="file">github</span> <span class="text-muted">git@github.com:fajremvp/repo.git (fetch)</span>
-        </div>
-        <div class="list-item">
-          <span class="file">codeberg</span> <span class="text-muted">git@codeberg.org:fajre/repo.git (fetch)</span>
-        </div>
+        {remotes.map((remote) => (
+           <div class="list-item">
+             <span class="file" style="min-width: 80px;">{remote.name}</span>
+             <a href={remote.webLink} target="_blank" class="hover-link text-muted">{remote.url} (fetch)</a>
+           </div>
+        ))}
       </div>
     </section>
 
@@ -115,13 +117,15 @@ import { profile, skills, experiences, projects, education } from '../data/portf
       </article>
     </section>
 
-    <div style="margin-top: 4rem;">
+    <div style="margin-top: 4rem; margin-bottom: 2rem;">
        <Prompt cmd="" />
-       <span style="display:inline-block; width:8px; height:1em; background:var(--text-main); animation: blink 1s step-end infinite; margin-top:-1.5rem; margin-left: 10.5rem;"></span>
+       <div style="display: flex; align-items: center; margin-top: -2.3rem; margin-left: 10.6rem;">
+         <span style="display:inline-block; width:8px; height:1.2rem; background:var(--text-main); animation: blink 1s step-end infinite;"></span>
+       </div>
     </div>
 
   </main>
-</Layout>
+  </Layout>
 
 <style>
   .container {
