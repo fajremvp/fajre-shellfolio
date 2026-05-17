@@ -1,15 +1,17 @@
 ---
 // src/components/Prompt.astro
-const { cmd } = Astro.props;
+const { cmd, showCursor } = Astro.props;
 ---
 <div class="prompt-line">
-  <span class="prompt-text">fajre@portfolio:~$</span> <span class="cmd-text">{cmd}</span>
+  <span class="prompt-text">fajre@portfolio:~$</span>
+  {cmd && <span class="cmd-text">{cmd}</span>}
+  {showCursor && <span class="cursor"></span>}
 </div>
 
 <style>
   .prompt-line {
     font-family: var(--font-tui);
-    font-size: 0.9rem; /* Reduzido de 1.2rem */
+    font-size: 0.9rem;
     margin-top: 3rem;
     margin-bottom: 1.5rem;
     line-height: 1.6;
@@ -22,6 +24,24 @@ const { cmd } = Astro.props;
 
   .cmd-text {
     color: #ffffff;
-    margin-left: 0.3rem;
+    margin-left: 0.5rem; /* Espaço natural entre o $ e o comando */
+  }
+</style>
+
+<style is:global>
+  /* O cursor com is:global garante que a animação não seja otimizada e descartada */
+  .cursor {
+    display: inline-block;
+    width: 10px;
+    height: 1.6em;
+    background-color: var(--text-main);
+    animation: blink 1s step-end infinite;
+    vertical-align: text-bottom;
+    margin-left: 0.4rem;
+  }
+
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
   }
 </style>

@@ -156,20 +156,18 @@ const t = data[lang as keyof typeof data];
       </div>
     </section>
 
-    <div style="margin-top: 4rem; margin-bottom: 2rem;">
-       <Prompt cmd="" />
-       <div style="display: flex; align-items: center; margin-top: -2.3rem; margin-left: 10.6rem;">
-         <span style="display:inline-block; width:8px; height:1.2rem; background:var(--text-main); animation: blink 1s step-end infinite;"></span>
-       </div>
+    <div class="final-prompt" style="margin-top: 2rem;">
+       <Prompt showCursor={true} />
     </div>
 
   </main>
 </Layout>
 
 <style>
-/* ... COLE TODO O CONTEÚDO DO <style> DA SUA PÁGINA ANTERIOR AQUI EXATAMENTE COMO ESTAVA ... */
-/* Ex: .container { ... } .prose { ... } etc. */
-  .container { width: 100%; padding: 4px 8px; padding-bottom: 5rem; }
+  .container { width: 100%; padding: 1rem 8px; }
+  .final-prompt :global(.prompt-line) {
+    margin-bottom: 0;
+  }
   .prose { font-family: var(--font-prose); color: var(--text-muted); width: 100%; font-size: 1.15rem; line-height: 1.6; word-wrap: break-word; overflow-wrap: break-word; }
   .prose p { margin-bottom: 1.2rem; }
   .tui-list { font-family: var(--font-tui); display: flex; flex-direction: column; gap: 0.8rem; font-size: 0.85rem; }
@@ -190,6 +188,5 @@ const t = data[lang as keyof typeof data];
   .perms { color: var(--text-main); }
   .folder { color: var(--accent-green); font-weight: bold; }
   .file { color: var(--text-main); }
-  @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
   @media (max-width: 600px) { .list-item { gap: 0.8rem; font-size: 0.9rem; } }
 </style>
