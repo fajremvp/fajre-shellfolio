@@ -24,12 +24,12 @@ export const data = {
       about: `Profissional de Infraestrutura e DevOps com mentalidade analítica, visão sistêmica de ambientes complexos e foco em Segurança Zero Trust e proteção de dados. Diferente do perfil acadêmico padrão, possuo experiência prática na arquitetura e operação de infraestruturas de nuvem privada, priorizando automação (IaC) e resiliência. Combino a base teórica de Engenharia de Software com capacidade de execução técnica para implementar ambientes auditáveis e seguros. Busco desafios que exijam autonomia, resolução de problemas estruturais e rigor técnico.`
     },
     skills: [
-      { category: "Infra & Virt", items: "Proxmox VE, Docker, LXC, ZFS, LUKS2, Linux (Debian, Alpine, Arch)" },
-      { category: "DevOps & IaC", items: "Ansible, Docker Compose, Shell Scripting, Cloud-Init, Chezmoi, GitOps" },
-      { category: "Security", items: "HashiCorp Vault, Authentik (SSO), CrowdSec, PKI, SSH Hardening" },
-      { category: "Networking", items: "OPNsense, VLANs, Traefik v3, Tailscale (Mesh VPN), DNS, NAT" },
-      { category: "Observability", items: "Prometheus, Grafana, Loki, Alertmanager, SRE (USE/RED)" },
-      { category: "Dev & Data", items: "Java, Python, PostgreSQL, SQLite, Regex, Git" }
+      { category: "Infraestrutura & Virtualização", items: "Proxmox VE, Docker, LXC, ZFS (RAID/Storage), LUKS2, Linux (Debian, Alpine, Arch, NixOS), Systemd (Custom Units), Kernel Tuning, Hardware Troubleshooting, Dropbear (Initramfs SSH), GRUB Rescue/Emergency Shell, Disk Passthrough, Storage Resilience (Fstab/UUID), NUT." },
+      { category: "DevOps & Automação (IaC)", items: "Ansible (Playbooks, Roles, Vault), Jinja2, Docker Compose, Shell Scripting, Cloud-Init, Chezmoi, Restic (Encrypted Snapshots), Backblaze B2, GitOps workflows, CI/CD Pipelines, Pre-Commit Hooks, Code Quality Gates." },
+      { category: "Segurança & Identidade (Zero Trust)", items: "HashiCorp Vault (AppRole, Raft), Authentik (SSO/OIDC), CrowdSec, Fail2Ban, Socket Proxy (Docker Hardening), PKI (internal CA), SSH hardening, Incident Response, Secret Scanning (Gitleaks), Shift-Left Security." },
+      { category: "Redes & Conectividade", items: "OPNsense, VLANs (802.1Q), Traefik v3, Tailscale (VPN Mesh/ACLs), DNS (AdGuard Home/Split-Horizon), Tor (Hidden Services), Network Debugging (tcpdump/nmap), NAT/Masquerading, P2P Sync (Syncthing), Edge Computing." },
+      { category: "Observabilidade", items: "Prometheus, Grafana (Dashboards as Code), Loki, Alloy, Alertmanager, Ntfy, Node Exporter, SRE Methodologies (U.S.E. / R.E.D.), Passive Monitoring (Healthchecks.io)." },
+      { category: "Desenvolvimento & Dados", items: "Java (Security, Swing), Python (Scripting/Automation), PostgreSQL, SQLite, Regular Expressions (Regex), WebSockets, Git." }
     ],
     experiences: [
       {
@@ -80,12 +80,12 @@ export const data = {
       about: `Infrastructure and DevOps professional with an analytical mindset, systemic view of complex environments, and a focus on Zero Trust Security and data protection. Unlike the standard academic profile, I possess practical experience in architecting and operating private cloud infrastructures, prioritizing automation (IaC) and resilience. I combine the theoretical foundation of Software Engineering with technical execution capability to implement auditable and secure environments. I seek challenges that demand autonomy, resolution of structural problems, and technical rigor.`
     },
     skills: [
-      { category: "Infra & Virt", items: "Proxmox VE, Docker, LXC, ZFS, LUKS2, Linux (Debian, Alpine, Arch)" },
-      { category: "DevOps & IaC", items: "Ansible, Docker Compose, Shell Scripting, Cloud-Init, Chezmoi, GitOps" },
-      { category: "Security", items: "HashiCorp Vault, Authentik (SSO), CrowdSec, PKI, SSH Hardening" },
-      { category: "Networking", items: "OPNsense, VLANs, Traefik v3, Tailscale (Mesh VPN), DNS, NAT" },
-      { category: "Observability", items: "Prometheus, Grafana, Loki, Alertmanager, SRE (USE/RED)" },
-      { category: "Dev & Data", items: "Java, Python, PostgreSQL, SQLite, Regex, Git" }
+      { category: "Infrastructure & Virtualization", items: "Proxmox VE, Docker, LXC, ZFS (RAID/Storage), LUKS2, Linux (Debian, Alpine, Arch, NixOS), Systemd (Custom Units), Kernel Tuning, Hardware Troubleshooting, Dropbear (Initramfs SSH), GRUB Rescue/Emergency Shell, Disk Passthrough, Storage Resilience (Fstab/UUID), NUT." },
+      { category: "DevOps & Automation (IaC)", items: "Ansible (Playbooks, Roles, Vault), Jinja2, Docker Compose, Shell Scripting, Cloud-Init, Chezmoi, Restic (Encrypted Snapshots), Backblaze B2, GitOps workflows, CI/CD Pipelines, Pre-Commit Hooks, Code Quality Gates." },
+      { category: "Security & Identity (Zero Trust)", items: "HashiCorp Vault (AppRole, Raft), Authentik (SSO/OIDC), CrowdSec, Fail2Ban, Socket Proxy (Docker Hardening), PKI (internal CA), SSH hardening, Incident Response, Secret Scanning (Gitleaks), Shift-Left Security." },
+      { category: "Networking & Connectivity", items: "OPNsense, VLANs (802.1Q), Traefik v3, Tailscale (VPN Mesh/ACLs), DNS (AdGuard Home/Split-Horizon), Tor (Hidden Services), Network Debugging (tcpdump/nmap), NAT/Masquerading, P2P Sync (Syncthing), Edge Computing." },
+      { category: "Observability", items: "Prometheus, Grafana (Dashboards as Code), Loki, Alloy, Alertmanager, Ntfy, Node Exporter, SRE Methodologies (U.S.E. / R.E.D.), Passive Monitoring (Healthchecks.io)." },
+      { category: "Development & Data", items: "Java (Security, Swing), Python (Scripting/Automation), PostgreSQL, SQLite, Regular Expressions (Regex), WebSockets, Git." }
     ],
     experiences: [
       {
