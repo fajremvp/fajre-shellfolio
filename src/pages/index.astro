@@ -4,11 +4,13 @@ import Layout from '../layouts/Layout.astro';
 import BootLoader from '../components/BootLoader.astro';
 import FastfetchHero from '../components/FastfetchHero.astro';
 import Prompt from '../components/Prompt.astro';
+import { experiences, projects } from '../data/portfolio';
 ---
 <Layout title="fajre@portfolio:~">
   <BootLoader />
 
   <main class="container">
+
     <FastfetchHero />
 
     <section>
@@ -25,30 +27,89 @@ import Prompt from '../components/Prompt.astro';
     </section>
 
     <section>
+      <Prompt cmd="neofetch --packages" />
+      <article class="prose">
+        <p>[... Conteúdo da Stack (Linguagens, Frameworks, Ferramentas) virá aqui ...]</p>
+      </article>
+    </section>
+
+    <section>
       <Prompt cmd="ls -l Experiences/" />
       <div class="tui-list">
-        <div class="list-item">
-          <span class="perms">drwxr-xr-x</span> <span class="date">2024-2026</span> <span class="folder">Frontend_Engineer_AcmeCorp</span>
-        </div>
-        <div class="list-item">
-          <span class="perms">drwxr-xr-x</span> <span class="date">2022-2024</span> <span class="folder">Web_Developer_Freelance</span>
-        </div>
+        {experiences.map((exp) => (
+          <details class="tui-details">
+            <summary class="list-item">
+              <span class="indicator"></span>
+              <span class="perms">{exp.perms}</span>
+              <span class="date">{exp.date}</span>
+              <span class="folder">{exp.folder}</span>
+            </summary>
+            <div class="expanded-content prose">
+              <p>{exp.content}</p>
+            </div>
+          </details>
+        ))}
       </div>
     </section>
 
     <section>
       <Prompt cmd="ls -l Projects/" />
       <div class="tui-list">
+        {projects.map((proj) => (
+          <details class="tui-details">
+            <summary class="list-item">
+              <span class="indicator"></span>
+              <span class="perms">{proj.perms}</span>
+              <span class="size">{proj.size}</span>
+              <a href={proj.link} target="_blank" class="file hover-link">{proj.file}</a>
+            </summary>
+            <div class="expanded-content prose">
+              <p>{proj.content}</p>
+            </div>
+          </details>
+        ))}
+      </div>
+    </section>
+
+    <section>
+      <Prompt cmd="history | grep 'education'" />
+      <article class="prose">
+        <p>[... Conteúdo de Educação/Cursos virá aqui ...]</p>
+      </article>
+    </section>
+
+    <section>
+      <Prompt cmd="git remote -v" />
+      <div class="tui-list">
         <div class="list-item">
-          <span class="perms">-rw-r--r--</span> <span class="size">4.2M</span> <span class="file">HyprRun.sh</span>
+          <span class="file">github</span> <span class="text-muted">git@github.com:seu-user/repo.git (fetch)</span>
         </div>
         <div class="list-item">
-          <span class="perms">-rw-r--r--</span> <span class="size">1.1M</span> <span class="file">S4f3-C0d3s.ts</span>
+          <span class="file">codeberg</span> <span class="text-muted">git@codeberg.org:seu-user/repo.git (fetch)</span>
         </div>
       </div>
     </section>
 
-    </main>
+    <section>
+      <Prompt cmd="ping -c 3 contact.fajre" />
+      <article class="prose">
+        <p>[... Informações de contato (Email, Nostr, SimpleX) virão aqui ...]</p>
+      </article>
+    </section>
+
+    <section>
+      <Prompt cmd="cat /etc/payments.conf" />
+      <article class="prose">
+        <p>[... Botões/Links que abrirão os QR Codes (BTC, XMR, Pix) virão aqui ...]</p>
+      </article>
+    </section>
+
+    <div style="margin-top: 4rem;">
+       <Prompt cmd="" />
+       <span style="display:inline-block; width:8px; height:1em; background:var(--text-main); animation: blink 1s step-end infinite; margin-top:-1.5rem; margin-left: 10.5rem;"></span>
+    </div>
+
+  </main>
 </Layout>
 
 <style>
@@ -61,7 +122,7 @@ import Prompt from '../components/Prompt.astro';
   .prose {
     color: var(--text-muted);
     max-width: 65ch;
-    font-size: 0.9rem; /* Reduzido de 1.2rem */
+    font-size: 0.9rem;
     line-height: 1.8;
   }
   .prose p {
@@ -73,7 +134,7 @@ import Prompt from '../components/Prompt.astro';
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
-    font-size: 0.85rem; /* Reduzido de 1.1rem */
+    font-size: 0.85rem;
   }
   .list-item {
     display: flex;
@@ -82,9 +143,63 @@ import Prompt from '../components/Prompt.astro';
     line-height: 1.4;
   }
 
+  /* --- Estilos para o Expansor Nativo (<details>) --- */
+  .tui-details {
+    /* Remove o triângulo padrão do navegador no Safari/Chrome */
+    & summary::-webkit-details-marker { display: none; }
+  }
+
+  .tui-details summary {
+    list-style: none; /* Remove o triângulo padrão no Firefox */
+    cursor: pointer;
+    user-select: none;
+    transition: opacity 0.2s;
+  }
+
+  .tui-details summary:hover {
+    opacity: 0.8; /* Feedback visual leve ao passar o mouse */
+  }
+
+  /* Indicador [+] e [-] feito 100% com CSS */
+  .indicator::before {
+    content: '[+]';
+    color: var(--text-muted);
+    margin-right: 0.5rem;
+    font-family: var(--font-tui);
+  }
+
+  .tui-details[open] .indicator::before {
+    content: '[-]';
+    color: var(--accent-amber); /* Fica laranjinha quando aberto */
+  }
+
+  .expanded-content {
+    /* Identação visual imitando o output de um comando filho */
+    padding-left: 3rem;
+    margin-top: 0.8rem;
+    margin-bottom: 1.5rem;
+    border-left: 1px dashed var(--text-muted);
+    margin-left: 1rem;
+  }
+
+  /* Link de projeto com hover estilo TUI */
+  .hover-link {
+    text-decoration: none;
+  }
+  .hover-link:hover {
+    text-decoration: underline;
+    color: var(--accent-amber);
+  }
+
   .perms { color: var(--text-main); }
   .folder { color: var(--accent-green); font-weight: bold; } /* Diretórios em verde */
   .file { color: var(--text-main); } /* Arquivos em branco/cinza */
+
+  /* Animação do cursor no final da página */
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
 
   @media (max-width: 600px) {
     .list-item { gap: 0.8rem; font-size: 0.9rem; }

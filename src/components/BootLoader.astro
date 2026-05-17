@@ -16,10 +16,22 @@
     document.documentElement.classList.add('skip-loader');
   } else {
     sessionStorage.setItem('portfolioBooted', 'true');
-    // 1600ms garante que a última linha (1.1s) apareça antes do fade out
-    setTimeout(() => {
-      document.documentElement.classList.add('boot-complete');
-    }, 1600);
+
+    // Pega a última linha do log para saber quando a animação inteira acabou
+    const lastLogLine = document.querySelector('.log-line:last-child');
+
+    if (lastLogLine) {
+      // Quando a animação CSS da última linha terminar, aplicamos o fade out
+      lastLogLine.addEventListener('animationend', () => {
+        // Um pequeno delay extra (400ms) só pra o usuário ler a última linha
+        setTimeout(() => {
+          document.documentElement.classList.add('boot-complete');
+        }, 400);
+      });
+    } else {
+      // Fallback de segurança absoluto caso o JS não ache o elemento
+      setTimeout(() => document.documentElement.classList.add('boot-complete'), 2000);
+    }
   }
 </script>
 
