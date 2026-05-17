@@ -1,0 +1,27 @@
+---
+// src/components/Prompt.astro
+const { cmd } = Astro.props;
+---
+<div class="prompt-line">
+  <span class="prompt-text">fajre@portfolio:~$</span> <span class="cmd-text">{cmd}</span>
+</div>
+
+<style>
+  .prompt-line {
+    font-family: var(--font-tui);
+    font-size: 0.9rem; /* Reduzido de 1.2rem */
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+
+  .prompt-text {
+    color: #ffffff;
+    font-weight: bold;
+  }
+
+  .cmd-text {
+    color: #ffffff;
+    margin-left: 0.3rem;
+  }
+</style>

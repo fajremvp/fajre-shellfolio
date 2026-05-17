@@ -1,14 +1,14 @@
 /* src/styles/global.css */
 
 @font-face {
-  font-family: 'Iosevka';
-  src: url('/fonts/Iosevka-Regular.woff2') format('woff2');
+  font-family: 'VGA';
+  src: url('/fonts/VGA.woff2') format('woff2');
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Inter';
-  src: url('/fonts/InterVariable.woff2') format('woff2');
+  font-family: 'Terminus';
+  src: url('/fonts/Terminus.woff2') format('woff2');
   font-display: swap;
 }
 
@@ -21,9 +21,9 @@
   --accent-green: #4af626; /* Verde phosphor terminal clássico */
   --accent-amber: #ffb86c;
 
-  /* Tipografia */
-  --font-tui: 'Iosevka', monospace;
-  --font-prose: 'Inter', sans-serif;
+  /* Tipografia Atualizada */
+  --font-tui: 'VGA', monospace;       /* Para o Boot, Fastfetch e Prompts */
+  --font-prose: 'Terminus', monospace; /* Para os parágrafos e textos longos */
 }
 
 /* Resets vitais */

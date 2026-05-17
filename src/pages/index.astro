@@ -3,6 +3,7 @@
 import Layout from '../layouts/Layout.astro';
 import BootLoader from '../components/BootLoader.astro';
 import FastfetchHero from '../components/FastfetchHero.astro';
+import Prompt from '../components/Prompt.astro';
 ---
 <Layout title="fajre@portfolio:~">
   <BootLoader />
@@ -10,21 +11,82 @@ import FastfetchHero from '../components/FastfetchHero.astro';
   <main class="container">
     <FastfetchHero />
 
-    <section class="content-section">
-      <h2>Projetos Recentes</h2>
-      <p>Em breve...</p>
+    <section>
+      <Prompt cmd="cat AboutMe.txt" />
+      <article class="prose">
+        <p>
+          Olá. Sou um desenvolvedor focado em ecossistemas Linux, privacidade e código aberto.
+          Minha stack principal orbita em torno de tecnologias estáticas, sistemas minimalistas e interfaces que respeitam o usuário.
+        </p>
+        <p>
+          Quando não estou otimizando dotfiles no NixOS, estou construindo soluções em TypeScript ou navegando no Nostr.
+        </p>
+      </article>
     </section>
-  </main>
+
+    <section>
+      <Prompt cmd="ls -l Experiences/" />
+      <div class="tui-list">
+        <div class="list-item">
+          <span class="perms">drwxr-xr-x</span> <span class="date">2024-2026</span> <span class="folder">Frontend_Engineer_AcmeCorp</span>
+        </div>
+        <div class="list-item">
+          <span class="perms">drwxr-xr-x</span> <span class="date">2022-2024</span> <span class="folder">Web_Developer_Freelance</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <Prompt cmd="ls -l Projects/" />
+      <div class="tui-list">
+        <div class="list-item">
+          <span class="perms">-rw-r--r--</span> <span class="size">4.2M</span> <span class="file">HyprRun.sh</span>
+        </div>
+        <div class="list-item">
+          <span class="perms">-rw-r--r--</span> <span class="size">1.1M</span> <span class="file">S4f3-C0d3s.ts</span>
+        </div>
+      </div>
+    </section>
+
+    </main>
 </Layout>
 
 <style>
   .container {
-    /* 100% da largura, sem limitação de tamanho e sem centralização */
     width: 100%;
     padding: 4px 8px;
+    padding-bottom: 5rem; /* Espaço para rolar no final da página */
   }
 
-  .content-section {
-    margin-top: 3rem;
+  .prose {
+    color: var(--text-muted);
+    max-width: 65ch;
+    font-size: 0.9rem; /* Reduzido de 1.2rem */
+    line-height: 1.8;
+  }
+  .prose p {
+    margin-bottom: 1.2rem;
+  }
+
+  .tui-list {
+    font-family: var(--font-tui);
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    font-size: 0.85rem; /* Reduzido de 1.1rem */
+  }
+  .list-item {
+    display: flex;
+    gap: 1.5rem;
+    color: var(--text-muted);
+    line-height: 1.4;
+  }
+
+  .perms { color: var(--text-main); }
+  .folder { color: var(--accent-green); font-weight: bold; } /* Diretórios em verde */
+  .file { color: var(--text-main); } /* Arquivos em branco/cinza */
+
+  @media (max-width: 600px) {
+    .list-item { gap: 0.8rem; font-size: 0.9rem; }
   }
 </style>

@@ -2,36 +2,54 @@
 // src/components/FastfetchHero.astro
 import AsciiFace from './AsciiFace.astro';
 ---
-<section class="fastfetch-container">
-  <div class="ascii-column">
-    <AsciiFace />
+<section class="fastfetch-wrapper">
+  <div class="first-prompt">
+    <span class="prompt-text">fajre@portfolio:~$</span> fastfetch
   </div>
-  <div class="info-column">
-    <h1><span class="user">fajre</span><span class="at">@</span><span class="host">nixos</span></h1>
-    <div class="separator">-------------------</div>
-    <p><span class="label">OS:</span> NixOS</p>
-    <p><span class="label">WM:</span> Niri</p>
-    <p><span class="label">Terminal:</span> Kitty</p>
-    <p><span class="label">Editor:</span> Neovim</p>
-    <p><span class="label">Focus:</span> Privacy / OSS / Linux</p>
 
-    <div class="colors">
-      <span class="color-block c1"></span><span class="color-block c2"></span>
-      <span class="color-block c3"></span><span class="color-block c4"></span>
-      <span class="color-block c5"></span><span class="color-block c6"></span>
-      <span class="color-block c7"></span><span class="color-block c8"></span>
+  <div class="fastfetch-container">
+    <div class="ascii-column">
+      <AsciiFace />
+    </div>
+    <div class="info-column">
+      <h1><span class="user">fajre</span><span class="at">@</span><span class="host">portfolio</span></h1>
+      <div class="separator">-------------------</div>
+      <p><span class="label">Name:</span> João Vitor Fogaça de Oliveira</p>
+      <p><span class="label">Online as:</span> Fajre</p>
+      <p><span class="label">Uptime:</span> 19 years</p>
+      <p><span class="label">Location:</span> Ibirama/SC/Brazil</p>
+      <p><span class="label">Role:</span> Software Engineering Student</p>
+      <p><span class="label">Uptime:</span> 19 years</p>
+
+      <div class="colors">
+        <span class="color-block c1"></span><span class="color-block c2"></span>
+        <span class="color-block c3"></span><span class="color-block c4"></span>
+        <span class="color-block c5"></span><span class="color-block c6"></span>
+        <span class="color-block c7"></span><span class="color-block c8"></span>
+      </div>
     </div>
   </div>
 </section>
 
 <style>
+  .fastfetch-wrapper {
+    margin-bottom: 2rem;
+  }
+  .first-prompt {
+    font-family: var(--font-tui);
+    color: #ffffff;
+    font-size: 0.9rem; /* Adicionado para igualar ao Prompt.astro */
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+  }
+
+  .prompt-text { font-weight: bold; }
+
   .fastfetch-container {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
     font-family: var(--font-tui);
-    margin-bottom: 4rem;
-    /* Sem margin-top, para colar no topo da .container */
   }
   @media (min-width: 768px) {
     .fastfetch-container {
@@ -44,11 +62,40 @@ import AsciiFace from './AsciiFace.astro';
     overflow-x: auto; /* Protege contra telas mobile muito finas */
   }
 
-  .user, .host { color: var(--accent-green); font-weight: bold; font-size: 1.2rem; }
-  .at { color: var(--text-main); font-size: 1.2rem; }
-  .separator { color: var(--text-muted); margin: 0.5rem 0; } /* Removido letter-spacing */
-  .label { color: var(--accent-green); font-weight: bold; margin-right: 0.5rem; }
-  p { margin: 0.3rem 0; }
+  /* Reseta o tamanho do h1 */
+  .info-column h1 {
+    margin: 0 0 0.5rem 0;
+    line-height: 1.4;
+  }
+
+  .user, .host {
+    color: var(--accent-green);
+    font-weight: bold;
+    font-size: 1rem; /* Reduzido de 1.3rem */
+  }
+
+  .at {
+    color: var(--text-main);
+    font-size: 1rem; /* Reduzido de 1.3rem */
+  }
+
+  .separator {
+    color: var(--text-muted);
+    margin: 0.5rem 0;
+  }
+
+  .label {
+    color: var(--accent-green);
+    font-weight: bold;
+    margin-right: 0.5rem;
+  }
+
+  /* Textos da direita: tamanho levemente maior e linhas mais separadas */
+  p {
+    margin: 0.4rem 0;
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
 
   .colors { margin-top: 1rem; display: flex; gap: 6px; }
   .color-block { width: 18px; height: 18px; display: inline-block; border-radius: 2px; }
