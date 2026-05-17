@@ -1,0 +1,40 @@
+/* src/styles/global.css */
+
+/* Importação Local (Zero Tracking) */
+@font-face {
+  font-family: 'Iosevka';
+  src: url('/fonts/Iosevka-Regular.woff2') format('woff2');
+  font-display: swap; /* Evita texto invisível no carregamento */
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/InterVariable.woff2') format('woff2');
+  font-display: swap;
+}
+
+:root {
+  /* Paleta baseada no Catppuccin Mocha */
+  --bg-crust: #11111b; /* Fundo mais escuro para a Hero */
+  --bg-base: #1e1e2e; /* Fundo do site */
+  --text-main: #cdd6f4;
+  --text-muted: #a6adc8;
+  --accent-green: #a6e3a1; /* Suave, não agressivo */
+  --accent-amber: #f9e2af;
+
+  /* Tipografia */
+  --font-tui: 'Iosevka', monospace;
+  --font-prose: 'Inter', sans-serif;
+}
+
+body {
+  background-color: var(--bg-base);
+  color: var(--text-main);
+  margin: 0;
+  font-family: var(--font-prose);
+}
+
+/* O Loader vai desaparecer se esta classe for adicionada */
+html.skip-loader #boot-loader {
+  display: none !important;
+}

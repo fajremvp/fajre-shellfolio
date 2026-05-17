@@ -1,0 +1,26 @@
+---
+// src/components/AsciiFace.astro
+---
+<pre class="ascii-art">
+       _..--""````""--.._
+     .'       |\/|       '.
+    /    /`._ |  | _.'\    \
+   ;    / b_.'`--`'.__d \   ;
+   |   |  \._ _.._ _./  |   |
+   ;   \   `._`''`_.'   /   ;
+    \   \     `""`     /   /
+     '.  `'-..____..-'`  .'
+       `"--..____..--"`
+</pre>
+
+<style>
+  .ascii-art {
+    color: var(--accent-green);
+    white-space: pre;
+    font-size: 0.6rem; /* Essencial para não quebrar no mobile */
+    line-height: 1.1;
+  }
+  @media (min-width: 768px) {
+    .ascii-art { font-size: 0.8rem; }
+  }
+</style>

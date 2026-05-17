@@ -1,0 +1,29 @@
+---
+// src/components/QrModal.astro
+const { id, title, qrImage } = Astro.props;
+---
+<button onclick={`document.getElementById('${id}').showModal()`} class="modal-btn">
+  {title}
+</button>
+
+<dialog id={id} class="qr-dialog">
+  <div class="dialog-content">
+    <h3>{title}</h3>
+    <img src={qrImage} alt={`QR Code para ${title}`} loading="lazy" />
+    <button onclick={`document.getElementById('${id}').close()`}>Fechar [x]</button>
+  </div>
+</dialog>
+
+<style>
+  .qr-dialog::backdrop {
+    background: rgba(17, 17, 27, 0.8); /* Crust escurecido */
+    backdrop-filter: blur(2px);
+  }
+  .qr-dialog {
+    background: var(--bg-base);
+    color: var(--text-main);
+    border: 1px solid var(--accent-green);
+    border-radius: 8px;
+    padding: 1rem;
+  }
+</style>
