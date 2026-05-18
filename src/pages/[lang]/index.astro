@@ -27,9 +27,9 @@ const t = data[lang as keyof typeof data];
 
     <section>
       <Prompt cmd="cat AboutMe.txt" />
-      <article class="prose">
-        <p>{t.profile.about}</p>
-      </article>
+      <div class="prose">
+        {t.profile.about}
+      </div>
     </section>
 
     <section>
@@ -58,7 +58,7 @@ const t = data[lang as keyof typeof data];
               <span class="folder">{exp.folder}</span>
             </summary>
             <div class="expanded-content prose">
-              <p>{exp.content}</p>
+              {exp.content}
             </div>
           </details>
         ))}
@@ -76,8 +76,9 @@ const t = data[lang as keyof typeof data];
               <span class="file">{proj.file}</span>
             </summary>
             <div class="expanded-content prose">
-              <p>{proj.content}</p>
-              <p>>> <a href={proj.link} target="_blank" class="hover-link">{t.ui.repoLink}</a></p>
+              {proj.content}
+              <br /><br />
+              >> <a href={proj.link} target="_blank" class="hover-link">{t.ui.repoLink}</a>
             </div>
           </details>
         ))}
@@ -98,7 +99,7 @@ const t = data[lang as keyof typeof data];
               <span class="folder">{edu.folder}</span>
             </summary>
             <div class="expanded-content prose">
-              <p>{edu.content}</p>
+              {edu.content}
             </div>
           </details>
         ))}
@@ -183,7 +184,6 @@ const t = data[lang as keyof typeof data];
     margin-bottom: 0;
   }
   .prose { font-family: var(--font-prose); color: var(--text-muted); width: 100%; font-size: 1.15rem; line-height: 1.6; word-wrap: break-word; overflow-wrap: break-word; white-space: pre-wrap; }
-  .prose p { margin-bottom: 0; }
   .tui-list { font-family: var(--font-tui); display: flex; flex-direction: column; gap: 0.8rem; font-size: 0.85rem; }
   .prose-list {
     font-family: var(--font-prose);
