@@ -1,6 +1,9 @@
 ---
 // src/components/FastfetchHero.astro
 import AsciiFace from './AsciiFace.astro';
+
+// Recebemos o profile atual (traduzido) lá do index.astro
+const { profile } = Astro.props;
 ---
 <section class="fastfetch-wrapper">
   <div class="first-prompt">
@@ -13,19 +16,28 @@ import AsciiFace from './AsciiFace.astro';
     </div>
     <div class="info-column">
       <h1><span class="user">fajre</span><span class="at">@</span><span class="host">portfolio</span></h1>
-      <div class="separator">-------------------</div>
-      <p><span class="label">Name:</span> Joao Vitor Fogaca de Oliveira</p>
-      <p><span class="label">Online as:</span> Fajre</p>
-      <p><span class="label">Uptime:</span> 19 years</p>
-      <p><span class="label">Location:</span> Ibirama/SC/Brazil</p>
-      <p><span class="label">Role:</span> Software Engineering Student</p>
+      <div class="separator">--------------</div>
+      <p><span class="label">Name:</span> {profile.Name}</p>
+      <p><span class="label">Online as:</span> {profile.Online}</p>
+      <p><span class="label">Uptime:</span> {profile.Uptime}</p>
+      <p><span class="label">Location:</span> {profile.Location}</p>
+      <p><span class="label">Role:</span> {profile.Role}</p>
+      <p><span class="label">Status:</span> {profile.Status}</p>
+      <p><span class="label">OS:</span> {profile.OS}</p>
+      <p><span class="label">Host:</span> {profile.Host}</p>
+      <p><span class="label">Kernel:</span> {profile.Kernel}</p>
+      <p><span class="label">Shell:</span> {profile.Shell}</p>
+      <p><span class="label">WM:</span> {profile.WM}</p>
 
-      <div class="colors">
-        <span class="color-block c1"></span><span class="color-block c2"></span>
-        <span class="color-block c3"></span><span class="color-block c4"></span>
-        <span class="color-block c5"></span><span class="color-block c6"></span>
-        <span class="color-block c7"></span><span class="color-block c8"></span>
+      <div class="color-palette">
+        <div class="color-row">
+          <span class="c0"></span><span class="c1"></span><span class="c2"></span><span class="c3"></span><span class="c4"></span><span class="c5"></span><span class="c6"></span><span class="c7"></span>
+        </div>
+        <div class="color-row">
+          <span class="c8"></span><span class="c9"></span><span class="c10"></span><span class="c11"></span><span class="c12"></span><span class="c13"></span><span class="c14"></span><span class="c15"></span>
+        </div>
       </div>
+    </div>
     </div>
   </div>
 </section>
@@ -37,7 +49,7 @@ import AsciiFace from './AsciiFace.astro';
   .first-prompt {
     font-family: var(--font-tui);
     color: #ffffff;
-    font-size: 0.9rem; /* Adicionado para igualar ao Prompt.astro */
+    font-size: 0.9rem;
     margin-bottom: 1.5rem;
     line-height: 1.2;
   }
@@ -58,10 +70,9 @@ import AsciiFace from './AsciiFace.astro';
   }
 
   .ascii-column {
-    overflow-x: auto; /* Protege contra telas mobile muito finas */
+    overflow-x: auto;
   }
 
-  /* Reseta o tamanho do h1 */
   .info-column h1 {
     margin: 0 0 0.5rem 0;
     line-height: 1.4;
@@ -70,12 +81,12 @@ import AsciiFace from './AsciiFace.astro';
   .user, .host {
     color: var(--accent-green);
     font-weight: bold;
-    font-size: 1rem; /* Reduzido de 1.3rem */
+    font-size: 0.9rem;
   }
 
   .at {
     color: var(--text-main);
-    font-size: 1rem; /* Reduzido de 1.3rem */
+    font-size: 0.9rem;
   }
 
   .separator {
@@ -89,23 +100,47 @@ import AsciiFace from './AsciiFace.astro';
     margin-right: 0.5rem;
   }
 
-  /* Textos da direita: tamanho levemente maior e linhas mais separadas */
   p {
     margin: 0.4rem 0;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     line-height: 1.5;
   }
 
-  .colors { margin-top: 1rem; display: flex; gap: 6px; }
-  .color-block { width: 18px; height: 18px; display: inline-block; border-radius: 2px; }
+  /* --- Terminal Color Palette (ANSI 0-15 Pure) --- */
+  .color-palette {
+    margin-top: 1.2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .color-row {
+    display: flex;
+    /* Zero gap para os blocos grudarem formando a barra clássica */
+    gap: 0;
+  }
+  .color-row span {
+    /* Dimensões que imitam exatamente os blocos renderizados pelo fastfetch (aprox. 3 caracteres) */
+    width: 45px;
+    height: 30px;
+    display: inline-block;
+  }
 
-  /* Cores TTY puras */
-  .c1 { background: #000000; border: 1px solid #333; } /* Black */
-  .c2 { background: #ff5555; } /* Red */
-  .c3 { background: #50fa7b; } /* Green */
-  .c4 { background: #f1fa8c; } /* Yellow */
-  .c5 { background: #bd93f9; } /* Blue/Purple */
-  .c6 { background: #ff79c6; } /* Magenta */
-  .c7 { background: #8be9fd; } /* Cyan */
-  .c8 { background: #f8f8f2; } /* White */
+  /* Cores Normais (0-7) */
+  .c0 { background: #454545; } /* Cinza escuro para aparecer no fundo preto */
+  .c1 { background: #CC0000; } /* Red */
+  .c2 { background: #00CC00; } /* Green */
+  .c3 { background: #CCCC00; } /* Yellow */
+  .c4 { background: #0000CC; } /* Blue */
+  .c5 { background: #CC00CC; } /* Magenta */
+  .c6 { background: #00CCCC; } /* Cyan */
+  .c7 { background: #CCCCCC; } /* White (Light Gray) */
+
+  /* Cores Brilhantes/Neon (8-15) */
+  .c8 { background: #767676; } /* Bright Black (Medium Gray) */
+  .c9 { background: #FF0000; } /* Bright Red */
+  .c10 { background: #00FF00; } /* Bright Green */
+  .c11 { background: #FFFF00; } /* Bright Yellow */
+  .c12 { background: #0000FF; } /* Bright Blue */
+  .c13 { background: #FF00FF; } /* Bright Magenta */
+  .c14 { background: #00FFFF; } /* Bright Cyan */
+  .c15 { background: #FFFFFF; } /* Bright White */
 </style>

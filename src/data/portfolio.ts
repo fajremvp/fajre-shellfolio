@@ -19,10 +19,17 @@ export const paymentMethods = [
 export const data = {
   pt: {
     profile: {
-      name: "Joao Vitor Fogaca de Oliveira",
-      role: "Engenheiro de Infraestrutura e DevOps",
-      location: "Ibirama/SC/Brazil",
-      uptime: "19 years",
+      Name: "Joao Vitor Fogaca de Oliveira",
+      Online: "Fajre",
+      Uptime: "19 anos",
+      Location: "Ibirama/SC/Brasil",
+      Role: "Estudante de Engenharia de Software",
+      Status: "Disponivel para trabalho",
+      OS: "NixOS 26.05 (Yarara) x86_64",
+      Host: "Aspire A315-41 (V1.18)",
+      Kernel: "Linux 6.18.26",
+      Shell: "bash 5.3.9",
+      WM: "niri 26.04 (Wayland)",
       about: `Profissional de Infraestrutura e DevOps com mentalidade analítica, visão sistêmica de ambientes complexos e foco em Segurança Zero Trust e proteção de dados. Diferente do perfil acadêmico padrão, possuo experiência prática na arquitetura e operação de infraestruturas de nuvem privada, priorizando automação (IaC) e resiliência. Combino a base teórica de Engenharia de Software com capacidade de execução técnica para implementar ambientes auditáveis e seguros. Busco desafios que exijam autonomia, resolução de problemas estruturais e rigor técnico.`
     },
     skills: [
@@ -35,11 +42,24 @@ export const data = {
     ],
     experiences: [
       {
-        perms: "drwxr-xr-x", date: "2025-Pres", company: "Projeto_Pessoal", format: "Remoto", folder: "Private_Cloud_Homelab",
+        perms: "drwxr-xr-x",
+        date: "Abr/2026-Pres",
+        company: "Honorato & Bini Advogados Associados",
+        format: "Freelance/Híbrido",
+        folder: "Assistente de Gestao de Dados e Documentos",
+        content: `Trabalho temporário de processamento e regularização de registros de habitualidade de clube de tiro para integração com o sistema SINARM (Polícia Federal).
+- Digitalização de documentos físicos e normalização de dados para importação automatizada em sistemas.
+- Validação e correção de inconsistências entre registros físicos e digitais em alto volume de dados críticos.
+- Estruturação de dados em planilhas (Excel/CSV) para integração com sistemas.
+- Automação parcial do fluxo de digitalização e extração de dados com uso de IA (OCR + LLM), aumentando a produtividade na migração e processamento de registros.
+- Garantia de integridade e precisão em dados sensíveis sob exigência regulatória.`
+      },
+      {
+        perms: "drwxr-xr-x", date: "Dez/2025-Pres", company: "Projeto_Pessoal", format: "Remoto", folder: "Homelab",
         content: "Arquitetura de Nuvem Privada (Proxmox, LUKS2, VLANs, OPNsense). Automação IaC via Ansible. Segurança Zero Trust (Vault, Authentik, CrowdSec). Observabilidade PLG e Disaster Recovery com cold boot e Restic."
       },
       {
-        perms: "drwxr-xr-x", date: "2025-2025", company: "UDESC", format: "Presencial/Ibirama", folder: "UDESC_LABOT_Researcher",
+        perms: "drwxr-xr-x", date: "Abr/2025-Dez/2025", company: "UDESC", format: "Presencial/Ibirama", folder: "Bolsista",
         content: "Atuei no Laboratório de Robótica (LABOT) em projetos de extensão com foco em inclusão digital, ministrando oficinas para capacitar o público idoso no uso de smartphones e tecnologias, além de aulas de robótica educacional para crianças com atividades lúdicas e interativas para o estímulo do raciocínio lógico."
       }
     ],
@@ -59,7 +79,7 @@ export const data = {
     ],
     education: [
       {
-        perms: "drwxr-xr-x", date: "2025-2029", institution: "UDESC", format: "Presencial/Ibirama", folder: "BSc_Software_Engineering",
+        perms: "drwxr-xr-x", date: "2025-2028", institution: "UDESC", format: "Presencial/Ibirama", folder: "Bacharelado em Engenharia de Software",
         content: "Universidade do Estado de Santa Catarina (UDESC) - Fase 3/8. Foco em engenharia base, estrutura de dados e arquitetura de sistemas."
       }
     ],
@@ -75,10 +95,17 @@ export const data = {
   },
   en: {
     profile: {
-      name: "Joao Vitor Fogaca de Oliveira",
-      role: "Infrastructure and DevOps Engineer",
-      location: "Ibirama/SC/Brazil",
-      uptime: "19 years",
+      Name: "Joao Vitor Fogaca de Oliveira",
+      Online: "Fajre",
+      Uptime: "19 years",
+      Location: "Ibirama/SC/Brazil",
+      Role: "Software Engineering Student",
+      Status: "Open to work",
+      OS: "NixOS 26.05 (Yarara) x86_64",
+      Host: "Aspire A315-41 (V1.18)",
+      Kernel: "Linux 6.18.26",
+      Shell: "bash 5.3.9",
+      WM: "niri 26.04 (Wayland)",
       about: `Infrastructure and DevOps professional with an analytical mindset, systemic view of complex environments, and a focus on Zero Trust Security and data protection. Unlike the standard academic profile, I possess practical experience in architecting and operating private cloud infrastructures, prioritizing automation (IaC) and resilience. I combine the theoretical foundation of Software Engineering with technical execution capability to implement auditable and secure environments. I seek challenges that demand autonomy, resolution of structural problems, and technical rigor.`
     },
     skills: [
@@ -91,11 +118,24 @@ export const data = {
     ],
     experiences: [
       {
-        perms: "drwxr-xr-x", date: "2025-Pres", company: "Personal_Project", format: "Remote", folder: "Private_Cloud_Homelab",
+        perms: "drwxr-xr-x",
+        date: "Apr/2026-Pres",
+        company: "Honorato & Bini Advogados Associados",
+        format: "Freelance/Hybrid",
+        folder: "Data and Document Management Assistant",
+        content: `Temporary work processing and regularizing shooting club attendance records for integration with the SINARM system (Federal Police).
+- Digitization of physical documents and data normalization for automated import into systems.
+- Validation and correction of inconsistencies between physical and digital records in a high volume of critical data.
+- Structuring data in spreadsheets (Excel/CSV) for system integration.
+- Partial automation of the digitization and data extraction flow using AI (OCR + LLM), increasing productivity in record migration and processing.
+- Guaranteeing integrity and accuracy in sensitive data under regulatory requirements.`
+      },
+      {
+        perms: "drwxr-xr-x", date: "Dez/2025-Pres", company: "Personal_Project", format: "Remote", folder: "Homelab",
         content: "Private Cloud Architecture (Proxmox, LUKS2, VLANs, OPNsense). IaC Automation via Ansible. Zero Trust Security (Vault, Authentik, CrowdSec). PLG Observability and Disaster Recovery with cold boot and Restic."
       },
       {
-        perms: "drwxr-xr-x", date: "2025-2025", company: "UDESC", format: "On-site/Ibirama", folder: "UDESC_LABOT_Researcher",
+        perms: "drwxr-xr-x", date: "Apr/2025-Dez/2025", company: "UDESC", format: "On-site/Ibirama", folder: "Scholarship Holder",
         content: "Worked at the Robotics Laboratory (LABOT) on extension projects focused on digital inclusion, teaching workshops to empower the elderly in using smartphones and technology, as well as educational robotics classes for children with playful and interactive activities to stimulate logical reasoning."
       }
     ],
@@ -115,7 +155,7 @@ export const data = {
     ],
     education: [
       {
-        perms: "drwxr-xr-x", date: "2025-2029", institution: "UDESC", format: "On-site/Ibirama", folder: "BSc_Software_Engineering",
+        perms: "drwxr-xr-x", date: "2025-2028", institution: "UDESC", format: "On-site/Ibirama", folder: "BSc_Software_Engineering",
         content: "Santa Catarina State University (UDESC) - Term 3/8. Focus on core engineering, data structures, and systems architecture."
       }
     ],

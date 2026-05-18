@@ -182,8 +182,8 @@ const t = data[lang as keyof typeof data];
   .final-prompt :global(.prompt-line) {
     margin-bottom: 0;
   }
-  .prose { font-family: var(--font-prose); color: var(--text-muted); width: 100%; font-size: 1.15rem; line-height: 1.6; word-wrap: break-word; overflow-wrap: break-word; }
-  .prose p { margin-bottom: 1.2rem; }
+  .prose { font-family: var(--font-prose); color: var(--text-muted); width: 100%; font-size: 1.15rem; line-height: 1.6; word-wrap: break-word; overflow-wrap: break-word; white-space: pre-wrap; }
+  .prose p { margin-bottom: 0; }
   .tui-list { font-family: var(--font-tui); display: flex; flex-direction: column; gap: 0.8rem; font-size: 0.85rem; }
   .prose-list {
     font-family: var(--font-prose);
