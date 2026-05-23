@@ -18,7 +18,7 @@ export function getStaticPaths() {
 const { lang } = Astro.params;
 const t = data[lang as keyof typeof data];
 ---
-<Layout title="fajre@shellfolio:~">
+<Layout title="fajre@shellfolio:~$">
   <BootLoader />
   <main class="container">
 
@@ -39,7 +39,6 @@ const t = data[lang as keyof typeof data];
               <span class="perms">{exp.perms}</span>
               <span class="date">{exp.date}</span>
               <span class="file">{exp.company}</span>
-              <span class="text-muted">({exp.format})</span>
               <span class="folder">{exp.folder}</span>
             </summary>
             <div class="expanded-content prose">{exp.content}</div>
@@ -74,7 +73,6 @@ const t = data[lang as keyof typeof data];
               <span class="perms">{edu.perms}</span>
               <span class="date">{edu.date}</span>
               <span class="file">{edu.institution}</span>
-              <span class="text-muted">({edu.format})</span>
               <span class="folder">{edu.folder}</span>
             </summary>
             <div class="expanded-content prose">{edu.content}</div>
@@ -89,7 +87,7 @@ const t = data[lang as keyof typeof data];
         {t.skills.map((skill) => (
           <div class="list-item" style="align-items: flex-start;">
             <span class="folder" style="flex: 0 0 39ch;">[{skill.category}]</span>
-            <span class="file">{skill.items}</span>
+            <span style="color: var(--text-muted);">{skill.items}</span>
           </div>
         ))}
       </div>

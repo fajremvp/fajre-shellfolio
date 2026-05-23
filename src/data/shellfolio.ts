@@ -22,7 +22,7 @@ export const data = {
       Name: "Joao Vitor Fogaca de Oliveira",
       Online: "Fajre",
       Uptime: "19 anos",
-      Location: "Ibirama/SC/Brasil",
+      Location: "Ibirama, SC, Brasil",
       Role: "Estudante de Engenharia de Software",
       Status: "Disponivel para trabalho",
       OS: "NixOS 26.05 (Yarara) x86_64",
@@ -47,7 +47,6 @@ Interesses: Segurança, Privacidade, Linux, Self-Hosting, IA, Economia e Filosof
         perms: "drwxr-xr-x",
         date: "Abr/2026-Pres",
         company: "Honorato & Bini Advogados Associados",
-        format: "Freelance/Híbrido",
         folder: "Assistente de Gestao de Dados e Documentos",
         content: `Trabalho temporário de processamento e regularização de registros de habitualidade de clube de tiro para integração com o sistema SINARM (Polícia Federal).
 - Digitalização de documentos físicos e normalização de dados para importação automatizada em sistemas.
@@ -57,11 +56,11 @@ Interesses: Segurança, Privacidade, Linux, Self-Hosting, IA, Economia e Filosof
 - Garantia de integridade e precisão em dados sensíveis sob exigência regulatória.`
       },
       {
-        perms: "drwxr-xr-x", date: "Dez/2025-Pres", company: "Homelab", format: "Remoto", folder: "Engenheiro de Infraestrutura e DevOps",
+        perms: "drwxr-xr-x", date: "Dez/2025-Pres", company: "Homelab", folder: "Engenheiro de Infraestrutura e DevOps",
         content: "Arquitetura de Nuvem Privada (Proxmox, LUKS2, VLANs, OPNsense). Automação IaC via Ansible. Segurança Zero Trust (Vault, Authentik, CrowdSec). Observabilidade PLG e Disaster Recovery com cold boot e Restic."
       },
       {
-        perms: "drwxr-xr-x", date: "Abr/2025-Dez/2025", company: "UDESC", format: "Presencial/Ibirama", folder: "Bolsista",
+        perms: "drwxr-xr-x", date: "Abr/2025-Dez/2025", company: "UDESC", folder: "Bolsista",
         content: "Atuei no Laboratório de Robótica (LABOT) em projetos de extensão com foco em inclusão digital, ministrando oficinas para capacitar o público idoso no uso de smartphones e tecnologias, além de aulas de robótica educacional para crianças com atividades lúdicas e interativas para o estímulo do raciocínio lógico."
       }
     ],
@@ -81,7 +80,7 @@ Interesses: Segurança, Privacidade, Linux, Self-Hosting, IA, Economia e Filosof
     ],
     education: [
       {
-        perms: "drwxr-xr-x", date: "2025-2028", institution: "UDESC", format: "Presencial/Ibirama", folder: "Bacharelado em Engenharia de Software",
+        perms: "drwxr-xr-x", date: "2025-2028", institution: "UDESC", folder: "Bacharelado em Engenharia de Software",
         content: "Universidade do Estado de Santa Catarina (UDESC) - Fase 3/8. Foco em engenharia base, estrutura de dados e arquitetura de sistemas."
       }
     ],
@@ -100,7 +99,7 @@ Interesses: Segurança, Privacidade, Linux, Self-Hosting, IA, Economia e Filosof
       Name: "Joao Vitor Fogaca de Oliveira",
       Online: "Fajre",
       Uptime: "19 years",
-      Location: "Ibirama/SC/Brazil",
+      Location: "Ibirama, SC, Brazil",
       Role: "Software Engineering Student",
       Status: "Open to work",
       OS: "NixOS 26.05 (Yarara) x86_64",
@@ -125,7 +124,6 @@ Interests: Security, Privacy, Linux, Self-Hosting, AI, Economics, and Philosophy
         perms: "drwxr-xr-x",
         date: "Apr/2026-Pres",
         company: "Honorato & Bini Advogados Associados",
-        format: "Freelance/Hybrid",
         folder: "Data and Document Management Assistant",
         content: `Temporary work involving processing and standardization of shooting club records for integration with the SINARM system (Federal Police of Brazil).
 - Digitization of physical documents and data normalization for automated system import.
@@ -135,11 +133,11 @@ Interests: Security, Privacy, Linux, Self-Hosting, AI, Economics, and Philosophy
 - Ensuring integrity and accuracy of sensitive data under regulatory requirements.`
       },
       {
-        perms: "drwxr-xr-x", date: "Dez/2025-Pres", company: "Homelab", format: "Remote", folder: "Infrastructure and DevOps Engineer",
+        perms: "drwxr-xr-x", date: "Dez/2025-Pres", company: "Homelab", folder: "Infrastructure and DevOps Engineer",
         content: "Private Cloud Architecture (Proxmox, LUKS2, VLANs, OPNsense). IaC Automation via Ansible. Zero Trust Security (Vault, Authentik, CrowdSec). PLG Observability and Disaster Recovery with cold boot and Restic."
       },
       {
-        perms: "drwxr-xr-x", date: "Apr/2025-Dez/2025", company: "UDESC", format: "On-site/Ibirama", folder: "Scholarship Holder",
+        perms: "drwxr-xr-x", date: "Apr/2025-Dez/2025", company: "UDESC", folder: "Scholarship Holder",
         content: "Worked at the Robotics Laboratory (LABOT) on extension projects focused on digital inclusion, teaching workshops to empower the elderly in using smartphones and technology, as well as educational robotics classes for children with playful and interactive activities to stimulate logical reasoning."
       }
     ],
@@ -159,7 +157,7 @@ Interests: Security, Privacy, Linux, Self-Hosting, AI, Economics, and Philosophy
     ],
     education: [
       {
-        perms: "drwxr-xr-x", date: "2025-2028", institution: "UDESC", format: "On-site/Ibirama", folder: "BSc_Software_Engineering",
+        perms: "drwxr-xr-x", date: "2025-2028", institution: "UDESC", folder: "Bachelor of Software Engineering",
         content: "Santa Catarina State University (UDESC) - Term 3/8. Focus on core engineering, data structures, and systems architecture."
       }
     ],
