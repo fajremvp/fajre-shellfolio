@@ -19,7 +19,7 @@ const { lang } = Astro.params;
 const t = data[lang as keyof typeof data];
 ---
 <Layout title="fajre@shellfolio:~$">
-  <BootLoader />
+  <BootLoader t={t} />
   <main class="container">
 
     <FastfetchHero profile={t.profile} />
