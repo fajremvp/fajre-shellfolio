@@ -7,8 +7,10 @@ export const contactLinks = [
   { protocol: "youtube", handle: "@fajremvp", url: "https://www.youtube.com/@fajremvp" },
   { protocol: "reddit", handle: "u/FajreMVP", url: "https://www.reddit.com/user/FajreMVP" },
   { protocol: "nostr", handle: "npub1dykmduj9qepw44zcwqah0wvxftzvd0escfrqqrxjhawd8c8mzagqgxfysu" },
-  { protocol: "simplex", handle: "SimpleX Chat", url: "https://smp14.simplex.im/a#2pZqGmH0Yx4ZUh4wELunW0rCeFjAf70b9LG57sOJPd0" }
+  { protocol: "simplex", handle: "SimpleX Chat", url: "https://smp14.simplex.im/a#J67Nzetqn5zkzqu7UzZB1YJPl8Usxa-VJNqCg6oIi6o" }
 ];
+
+export const onionAddress = "address.onion";
 
 export const paymentMethods = [
   { name: "BTC", address: "bc1qfv5qan7dpsaffwlxtm299wwxffgnkzq0eld06p", qr: "/assets/qr-btc.webp" },
@@ -109,7 +111,8 @@ Interesses: Segurança, Privacidade, Linux, Auto-Hospedagem, IA, Economia e Filo
     ui: {
       repoLink: "Link do Repositório",
       langEn: "[ Inglês ]",
-      langPt: "[ Português ]"
+      langPt: "[ Português ]",
+      torMessage: "Also available on Tor: "
     }
   },
   en: {
@@ -203,7 +206,8 @@ Interests: Security, Privacy, Linux, Self-Hosting, AI, Economics, and Philosophy
     ui: {
       repoLink: "Repository Link",
       langEn: "[ English ]",
-      langPt: "[ Portuguese ]"
+      langPt: "[ Portuguese ]",
+      torMessage: "Also available on Tor: "
     }
   }
 };

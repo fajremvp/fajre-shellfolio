@@ -4,7 +4,7 @@ import Layout from '../../layouts/Layout.astro';
 import BootLoader from '../../components/BootLoader.astro';
 import FastfetchHero from '../../components/FastfetchHero.astro';
 import Prompt from '../../components/Prompt.astro';
-import { data, contactLinks, paymentMethods } from '../../data/shellfolio';
+import { data, contactLinks, paymentMethods, onionAddress } from '../../data/shellfolio';
 import QrModal from '../../components/QrModal.astro'; // Importe o Modal
 
 // O Astro vai compilar isso em /pt/index.html e /en/index.html
@@ -158,7 +158,13 @@ const t = data[lang as keyof typeof data];
           ) : (
             <a href="/pt" class="hover-link" style="color: var(--text-muted); font-family: var(--font-prose); font-size: 1.15rem;">{t.ui.langPt}</a>
           )}
-        </div>
+	</div>
+
+    <section>
+      <Prompt cmd="cat /etc/tor/shellfolio/hostname" />
+      <div class="prose"><span class="hover-link" style="color: var(--text-muted); font-family: var(--font-prose); display: inline-block;">{onionAddress}</span></div>
+    </section>
+
       </div>
     </section>
 
