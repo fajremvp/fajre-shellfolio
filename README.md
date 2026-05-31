@@ -1,7 +1,7 @@
-# shellfolio
+# 🖥️ Fajre's shellfolio
 
-Um template de portfólio minimalista, focado em performance e estética TUI (Terminal User Interface).
+Source code for my personal portfolio, live at [fajre.pages.dev](https://fajre.pages.dev).
 
-- Feito com [Astro](https://astro.build).
+Built with Astro.js. If you like the TUI (Terminal User Interface) aesthetic, I have released the underlying architecture as a free, open-source template.
 
-## 🚀 Como usar
+👉 **Get the template here:** [fajremvp/shellfolio](https://github.com/fajremvp/shellfolio)

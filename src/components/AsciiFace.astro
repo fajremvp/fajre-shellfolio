@@ -1,52 +1,16 @@
 ---
-// src/components/AsciiFace.astro
+import { siteConfig } from '../config/site.config';
 ---
 <pre class="ascii-art">
-                               ':;;:;;;;;;:;;;:::;
-                            ,c:,'.............',;;;;;::;
-                          .l,,.........................,c.
-                        ,lc;'............................,;
-                      c::;'...............................,c
-                     :,''.......'''........................':'
-                    :''....,coodddol:,......................';,
-                    ;....:oxkkkkkkxxxdlc,....................';
-                   .,..,okkOOOOOOkkkkxxxddol:;'....  .........,
-                   ''.,dOOOOOOOOOOOkkkkxxxddolc::;,... .......'
-                   .'.ckOOOOOOOOkkkkkkkxkxddoolcc:;;,'........'
-                    ',dOOOOOOOOOkOkkkkkkkxxdoolcc::;;,.........
-                     ckOxooolloodxkOOOOkdoc::;:::::;;;;,.......
-                     co;,''..';;:ldxxxdl,...........',,;;.....
-                     ldolcccc;;;codxdl:,....',,'''...',;;''...,
-                   'xkxoc;;;...';lxOxl'...,c,......''',;;;,'',::
-                    xOkxxxll:;:coxkkdc,'';:c:;,,''',;;,;;;,,,,.,
-                    l0OkkkxxddxxkOOxo:,,;:llllllclc::;;;;;,.','.
-                    ;0OOOOOkkkkkOOOxoc;,;codxxxxdol::;;;;,,..'.
-                     k0OOOOkxxkO00Odl:;:;,:odxxddol:;,,,,'''''
-                     cOkkkxodxkxodd:,..'..':cooolc:,,,,'..,,,
-                     ckxddlodxoc;;;'......',;::c:;,'''....,
-                     ;oxd:'.',,....,,...........;,'.......
-                     .;cl'..,:;:::cc:;,........ .........
-                      '';,':xxxxxxdoolc;,,,;:;...........
-                      ...'';dkxoc:,'''''',::;'......  ...
-                      .....':okdlc;''',;;;,'...        ..
-                       ......,;,,;,;,,''.....         ...
-                        . ...............            ..,.
-                         .....   .   .              ..',;
-                          ..  .                   ...'',;;
-                           :'..                 .....'',;:c.
-                           dxl'...          ........''',,;;:c;,,.
-                          .xkkkxol;,...............'''',,;;'.....;'
-                        .;lOOOOkkxdlc:;;,''',,''''',,,,,'..    .....';
-                     .,;,'xOOOkkkkxxdolc::cc::;;;;;;,..           .....',,
-                     '.''.oOOOkkkkxxdolccclccc::::,.              ........'.
+{siteConfig.asciiArt}
 </pre>
 
 <style>
   .ascii-art {
     color: var(--accent-green);
     white-space: pre;
-    font-size: 7px; /* Tente usar pixels cravados se a fonte borrar */
-    line-height: 1.1; /* Fontes de hardware costumam preferir line-height 1 */
+    font-size: 7px;
+    line-height: 1.1;
   }
   @media (min-width: 768px) {
     .ascii-art { font-size: 10.45px; }

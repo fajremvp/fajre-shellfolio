@@ -1,0 +1,19 @@
+---
+import Prompt from '../Prompt.astro';
+const { contacts } = Astro.props;
+---
+<section>
+  <Prompt cmd="curl https://contact.local" />
+  <div class="tui-grid">
+    {contacts.map((contact: any) => (
+       <>
+         <span class="file">{contact.protocol}</span>
+         {contact.url ? (
+           <a href={contact.url} target="_blank" rel="noopener noreferrer" class="hover-link" style="color: var(--text-muted); font-family: var(--font-prose); font-size: 1.15rem; word-break: break-all;">{contact.handle}</a>
+         ) : (
+           <span style="color: var(--text-muted); font-family: var(--font-prose); font-size: 1.15rem; word-break: break-all;">{contact.handle}</span>
+         )}
+       </>
+    ))}
+  </div>
+</section>
