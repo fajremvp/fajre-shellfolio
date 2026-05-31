@@ -105,27 +105,27 @@ export const data: PortfolioData = {
     skills: [
       {
 	category: "Infrastructure & Virtualization",
-	items: "Proxmox VE, Docker, LXC, ZFS (RAID/Storage), LUKS2, Linux (Debian, Alpine, Arch, NixOS), Systemd (Custom Units), Kernel Tuning, Hardware Troubleshooting, Dropbear (Initramfs SSH), GRUB Rescue/Emergency Shell, Disk Passthrough, Storage Resilience (Fstab/UUID), NUT."
+	items: "Linux (Debian, Alpine, Arch, NixOS), Proxmox VE, LXC, ZFS, Docker, Systemd, LUKS2, Dropbear (Initramfs SSH), NUT."
       },
       {
 	category: "DevOps & Automation (IaC)",
-	items: "Ansible (Playbooks, Roles, Vault), Jinja2, Docker Compose, Shell Scripting, Cloud-Init, Chezmoi, Restic (Encrypted Snapshots), Backblaze B2, GitOps workflows, CI/CD Pipelines, Pre-Commit Hooks, Code Quality Gates."
+	items: "Ansible, Jinja2, Docker Compose, Shell Scripting, Cloud-Init, Chezmoi, Restic, Backblaze B2, GitOps, CI/CD Pipelines, Shift-Left Security, Pre-Commit Hooks, Code Quality Gates."
       },
       {
 	category: "Security & Identity (Zero Trust)",
-	items: "HashiCorp Vault (AppRole, Raft), Authentik (SSO/OIDC), CrowdSec, Fail2Ban, Socket Proxy (Docker Hardening), PKI (internal CA), SSH hardening, Incident Response, Secret Scanning (Gitleaks), Shift-Left Security."
+	items: "HashiCorp Vault, Authentik, CrowdSec, Fail2Ban, Socket Proxy, PKI (internal CA), SSH hardening."
       },
       {
 	category: "Networking & Connectivity",
-	items: "OPNsense, VLANs (802.1Q), Traefik v3, Tailscale (VPN Mesh/ACLs), DNS (AdGuard Home/Split-Horizon), Tor (Hidden Services), Network Debugging (tcpdump/nmap), NAT/Masquerading, P2P Sync (Syncthing), Edge Computing."
+	items: "OPNsense, VLANs, Traefik, Tailscale, DNS (AdGuard Home/Split-Horizon), Tor (Hidden Services), Network Debugging (tcpdump/nmap), P2P Sync (Syncthing), Edge Computing."
       },
       {
 	category: "Observability",
-	items: "Prometheus, Grafana (Dashboards as Code), Loki, Alloy, Alertmanager, Ntfy, Node Exporter, SRE Methodologies (U.S.E. / R.E.D.), Passive Monitoring (Healthchecks.io)."
+	items: "Prometheus, Loki, Grafana, Alloy, Alertmanager, Ntfy, Node Exporter, SRE Methodologies (U.S.E. / R.E.D.), Passive Monitoring (Healthchecks.io)."
       },
       {
 	category: "Development & Data",
-	items: "Java (Security, Swing), Python (Scripting/Automation), PostgreSQL, SQLite, Regular Expressions (Regex), WebSockets, Git."
+	items: "Java, Python, Bash, Nix, PostgreSQL, SQLite, Regex, Git."
       }
     ],
     experiences: [
@@ -156,7 +156,7 @@ export const data: PortfolioData = {
         perms: "drwxr-xr-x",
 	file: "nixos-config",
 	link: "https://github.com/fajremvp/nixos-config",
-        content: `OS as Code. Complete declarative configuration of my operating systems (NixOS) and user environments, managed entirely via Nix Flakes and Home Manager. Applies the Infrastructure as Code (IaC) philosophy directly to the desktop, ensuring instant reproducibility on new hardware, immutability, fail-proof rollbacks via GRUB, and a Single Source of Truth (SSOT) for all my networking, services, drivers, and dotfiles.`
+        content: `My ultimate "OS as Code" architecture. This repository brings the Infrastructure as Code (IaC) mindset to the desktop through a fully declarative configuration powered by Nix Flakes and Home Manager. It eliminates "ClickOps" and system drift entirely, providing instant reproducibility on any machine, immutability, reliable rollbacks, and a Single Source of Truth (SSOT) for my networking, packages, drivers, and dotfiles.`
       },
       {
         perms: "drwxr-xr-x",
@@ -168,13 +168,13 @@ export const data: PortfolioData = {
         perms: "-rwxr-xr-x",
 	file: "HyprRun",
 	link: "https://github.com/fajremvp/HyprRun",
-        content: "Created a minimalist Bash application launcher for dynamic tiling window managers (Hyprland/Niri/Wayland). Integrated fzf for high-performance fuzzy search via terminal, avoiding floating windows and GUI overhead."
+        content: "I built a minimalist application launcher in Bash designed specifically for dynamic tiling window managers such as Hyprland, Niri, and Sway. It leverages fzf for fast fuzzy searching directly from the terminal, avoiding floating windows and the overhead of graphical interfaces. The result is a keyboard-driven workflow with zero GUI overhead that keeps workspaces clean and stays true to the tiling philosophy."
       },
       {
         perms: "lrwxrwxrwx",
 	file: "dotfiles",
 	link: "https://github.com/fajremvp/dotfiles",
-        content: "Maintain automation and management of my Linux development environment with custom configurations, using Chezmoi and Git to ensure versioning, portability, and fast provisioning (IaC for desktop). Repository includes Shell scripts for resource monitoring, system tuning, and interactive terminal interfaces, standardizing workflows on Arch Linux with Hyprland."
+        content: "I maintained and automated my previous Linux development environment using custom configurations managed with Chezmoi and Git, ensuring version control, portability, and fast provisioning through an Infrastructure as Code approach for the desktop. Although I have since moved to the declarative ecosystem of NixOS, this repository reflects my deep dive into imperative system automation and Wayland customization. The repository includes Shell scripts for resource monitoring, system tuning, and interactive terminal-based utilities, helping standardize workflows across an Arch Linux setup running Hyprland."
       },
       {
         perms: "drwxr-xr-x",
@@ -225,27 +225,27 @@ export const data: PortfolioData = {
     skills: [
       {
 	category: "Infraestrutura & Virtualização",
-	items: "Proxmox VE, Docker, LXC, ZFS (RAID/Storage), LUKS2, Linux (Debian, Alpine, Arch, NixOS), Systemd (Custom Units), Kernel Tuning, Hardware Troubleshooting, Dropbear (Initramfs SSH), GRUB Rescue/Emergency Shell, Disk Passthrough, Storage Resilience (Fstab/UUID), NUT."
+	items: "Linux (Debian, Alpine, Arch, NixOS), Proxmox VE, LXC, ZFS, Docker, Systemd, LUKS2, Dropbear (Initramfs SSH), NUT."
       },
       {
 	category: "DevOps & Automação (IaC)",
-	items: "Ansible (Playbooks, Roles, Vault), Jinja2, Docker Compose, Shell Scripting, Cloud-Init, Chezmoi, Restic (Encrypted Snapshots), Backblaze B2, GitOps workflows, CI/CD Pipelines, Pre-Commit Hooks, Code Quality Gates."
+	items: "Ansible, Jinja2, Docker Compose, Shell Scripting, Cloud-Init, Chezmoi, Restic, Backblaze B2, GitOps, CI/CD Pipelines, Shift-Left Security, Pre-Commit Hooks, Code Quality Gates."
       },
       {
 	category: "Segurança & Identidade (Zero Trust)",
-	items: "HashiCorp Vault (AppRole, Raft), Authentik (SSO/OIDC), CrowdSec, Fail2Ban, Socket Proxy (Docker Hardening), PKI (internal CA), SSH hardening, Incident Response, Secret Scanning (Gitleaks), Shift-Left Security."
+	items: "HashiCorp Vault, Authentik, CrowdSec, Fail2Ban, Socket Proxy, PKI (internal CA), SSH hardening."
       },
       {
 	category: "Redes & Conectividade",
-	items: "OPNsense, VLANs (802.1Q), Traefik v3, Tailscale (VPN Mesh/ACLs), DNS (AdGuard Home/Split-Horizon), Tor (Hidden Services), Network Debugging (tcpdump/nmap), NAT/Masquerading, P2P Sync (Syncthing), Edge Computing."
+	items: "OPNsense, VLANs, Traefik, Tailscale, DNS (AdGuard Home/Split-Horizon), Tor (Hidden Services), Network Debugging (tcpdump/nmap), P2P Sync (Syncthing), Edge Computing."
       },
       {
 	category: "Observabilidade",
-	items: "Prometheus, Grafana (Dashboards as Code), Loki, Alloy, Alertmanager, Ntfy, Node Exporter, SRE Methodologies (U.S.E. / R.E.D.), Passive Monitoring (Healthchecks.io)."
+	items: "Prometheus, Loki, Grafana, Alloy, Alertmanager, Ntfy, Node Exporter, SRE Methodologies (U.S.E. / R.E.D.), Passive Monitoring (Healthchecks.io)."
       },
       {
 	category: "Desenvolvimento & Dados",
-	items: "Java (Security, Swing), Python (Scripting/Automation), PostgreSQL, SQLite, Regular Expressions (Regex), WebSockets, Git."
+	items: "Java, Python, Bash, Nix, PostgreSQL, SQLite, Regex, Git."
       }
     ],
     experiences: [
@@ -276,7 +276,7 @@ export const data: PortfolioData = {
         perms: "drwxr-xr-x",
 	file: "nixos-config",
 	link: "https://github.com/fajremvp/nixos-config",
-        content: `OS as Code. Configuração declarativa completa dos meus sistemas operacionais (NixOS) e ambientes de usuário, gerenciados inteiramente via Nix Flakes e Home Manager. Aplica a filosofia de Infraestrutura como Código (IaC) direto no desktop, garantindo reprodutibilidade instantânea em hardware novo, imutabilidade, rollbacks à prova de falhas pelo GRUB e um Single Source of Truth (SSOT) para toda a minha rede, serviços, drivers e dotfiles.`
+        content: `Minha arquitetura definitiva de "OS as Code". Este repositório aplica a filosofia de Infraestrutura como Código (IaC) direto no desktop de forma declarativa usando Nix Flakes e Home Manager. O projeto elimina completamente "ClickOps" e o apodrecimento do sistema, garantindo reprodutibilidade instantânea em qualquer hardware, imutabilidade, rollbacks à prova de falhas e um Single Source of Truth (SSOT) para toda a minha rede, pacotes, drivers e dotfiles.`
       },
       {
         perms: "drwxr-xr-x",
@@ -288,13 +288,13 @@ export const data: PortfolioData = {
         perms: "-rwxr-xr-x",
 	file: "HyprRun",
 	link: "https://github.com/fajremvp/HyprRun",
-        content: "Criei um launcher de aplicações minimalista em Bash para gerenciadores de janelas de tiling dinâmico (Hyprland/Niri/Wayland). Integrei o fzf para busca fuzzy de alta performance via terminal, evitando janelas flutuantes e a sobrecarga de interfaces gráficas."
+        content: "Criei um launcher de aplicações minimalista em Bash projetado especificamente para tiling window managers dinâmicos como Hyprland, Niri e Sway. Integrei o fzf para busca fuzzy de alta performance via terminal, evitando janelas flutuantes e a sobrecarga de interfaces gráficas. O resultado é um workflow focado no teclado, com zero overhead de interface gráfica, que mantém os workspaces limpos e respeita a filosofia tiling."
       },
       {
         perms: "lrwxrwxrwx",
 	file: "dotfiles",
 	link: "https://github.com/fajremvp/dotfiles",
-        content: "Mantenho a automação e gestão do meu ambiente de desenvolvimento Linux com configurações próprias, usando Chezmoi e Git para garantir versionamento, portabilidade e provisionamento rápido (IaC para desktop). O repositório inclui scripts em Shell para monitoramento de recursos, ajuste de parâmetros do sistema e interfaces interativas via terminal, padronizando workflows em Arch Linux com Hyprland."
+        content: "Mantive a automação e gestão do meu antigo ambiente de desenvolvimento Linux com configurações próprias, usando Chezmoi e Git para garantir versionamento, portabilidade e provisionamento rápido (IaC para desktop). Embora eu tenha migrado para o mundo declarativo do NixOS, este repositório representa meu mergulho profundo na automação imperativa de sistemas e customização do Wayland. O repositório inclui scripts em Shell para monitoramento de recursos, ajuste de parâmetros do sistema e interfaces interativas via terminal, padronizando workflows em Arch Linux com Hyprland."
       },
       {
         perms: "drwxr-xr-x",

@@ -2,9 +2,9 @@
 
 export const siteConfig = {
   // Global Branding & SEO
-  author: "Joao Vitor Fogaca de Oliveira",         // Used in meta tags
+  author: "Fajre",         // Used in meta tags
   title: "fajre@shellfolio:~$", // Browser tab title
-  description: "Infrastructure & DevOps Engineer. I use Nix, btw.",
+  description: "I use Nix, btw.",
   siteUrl: "https://fajre.pages.dev", // Used for OpenGraph
   metaImage: "/og-image.png", // Placed in public/ directory
 
@@ -26,8 +26,8 @@ export const siteConfig = {
     skills: true,
     remotes: true,
     contact: true,
-    wallets: true,   // Set to false by default for generic users
-    torMirror: true, // Set to false by default for generic users
+    wallets: true,
+    torMirror: true,
   },
 
   // Sensitive/Specific Data
