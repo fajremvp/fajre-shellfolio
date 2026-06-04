@@ -4,7 +4,7 @@ export const siteConfig = {
   // Global Branding & SEO
   author: "Fajre",         // Used in meta tags
   title: "fajre@shellfolio:~$", // Browser tab title
-  description: "I use Nix, btw.",
+  description: "Infrastructure and DevOps Engineer, passionate about open-source and decentralized systems. Interests: Security, Privacy, Linux, Self-Hosting, AI, Economics, and Philosophy. I use Nix, btw.",
   siteUrl: "https://fajre.pages.dev", // Used for OpenGraph
   metaImage: "/og-image.png", // Placed in public/ directory
 
