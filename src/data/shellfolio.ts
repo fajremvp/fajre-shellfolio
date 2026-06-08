@@ -80,9 +80,9 @@ export const contactLinks = [
 ];
 
 export const paymentMethods = [
-  { name: "BTC", address: "bc1qfv5qan7dpsaffwlxtm299wwxffgnkzq0eld06p", qr: "/assets/qr-btc.webp" },
+  { name: "BTC", address: "bc1qnrn2hzkelpcczfp9uw89v34lycr88wm3ytz7sr", qr: "/assets/qr-btc.webp" },
   { name: "Lightning", address: "fajre@blink.sv", qr: "/assets/qr-ln.webp" },
-  { name: "XMR", address: "85UMFQfR6AhUBV6ed5hP5b5E668yBU9KfKJGtQ1YkRf1NLSbNpoBrydBQaJuFcPo5LgainWyqkpr6ARTtob2KGnW6rN8jo8", qr: "/assets/qr-xmr.webp" },
+  { name: "XMR", address: "83a6wfkXtdiQaB8Qy89b8TiBBbxux8FJV74K9stuwpx5HcdB9u4aCiB3YMLhJdM9P13wjDQQNjjA3KroTjWWwX3qJaR3Fgz", qr: "/assets/qr-xmr.webp" },
   { name: "Pix", address: "17ef428e-49d7-405e-9e90-fce5b8ee3ddf", qr: "/assets/qr-pix.webp" }
 ];
 
