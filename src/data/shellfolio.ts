@@ -160,7 +160,7 @@ export const data: PortfolioData = {
     education: [
       {
         perms: "drwxr-xr-x", date: "2025-2028", institution: "UDESC", folder: "Bachelor of Software Engineering",
-        content: "Santa Catarina State University (UDESC) - Term 3/8."
+        content: "Santa Catarina State University (UDESC) - Term 4/8."
       }
     ],
     skills: [
@@ -283,7 +283,7 @@ export const data: PortfolioData = {
         date: "2025-2028",
         institution: "UDESC",
         folder: "Bacharelado em Engenharia de Software",
-        content: "Universidade do Estado de Santa Catarina (UDESC) - Fase 3/8."
+        content: "Universidade do Estado de Santa Catarina (UDESC) - Fase 4/8."
       }
     ],
     skills: [
