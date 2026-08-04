@@ -112,7 +112,7 @@ export const data: PortfolioData = {
       },
       {
         perms: "drwxr-xr-x",
-        date: "Apr/2026-Jun/2026",
+        date: "Apr/2026-Jul/2026",
         company: "Honorato & Bini Advogados Associados",
         folder: "Data and Document Management Assistant",
         content: `Temporary work involving processing and standardization of shooting club records for integration with the SINARM system (Federal Police of Brazil).\n- Built Python automation to validate records in bulk via authenticated HTTP requests to a web-based system, processing unstructured responses and marking inconsistencies in Excel spreadsheets.\n- Partial automation of document digitization and data extraction workflows using AI (OCR + LLM), improving productivity in record migration and processing.\n- Structuring data in spreadsheets (Excel/CSV) for system integration.\n- Validation and correction of inconsistencies between physical and digital records in large volumes of sensitive data.\n- Audited and reconciled financial histories (payments/billing) and membership status of club associates, mitigating compliance failures prior to data export.\n- Digitization of physical documents and data normalization for automated system import.\n- Communication with clients via WhatsApp to verify and correct data inconsistencies and request missing or updated information.\n- Ensuring integrity and accuracy of sensitive data under regulatory requirements.`
@@ -232,7 +232,7 @@ export const data: PortfolioData = {
       },
       {
         perms: "drwxr-xr-x",
-        date: "Abr/2026-Jun/2026",
+        date: "Abr/2026-Jul/2026",
         company: "Honorato & Bini Advogados Associados",
         folder: "Assistente de Gestao de Dados e Documentos",
         content: `Trabalho temporário de processamento e regularização de registros de habitualidade de clube de tiro para integração com o sistema SINARM (Polícia Federal).\n- Desenvolvimento de automação em Python para validação em lote de registros via integração com sistema web, realizando consultas HTTP autenticadas, processamento de respostas não estruturadas e marcação de inconsistências diretamente em planilhas Excel.\n- Automação parcial do fluxo de digitalização e extração de dados com uso de IA (OCR + LLM), aumentando a produtividade na migração e processamento de registros.\n- Estruturação de dados em planilhas (Excel/CSV) para integração com sistemas.\n- Validação e correção de inconsistências entre registros físicos e digitais em alto volume de dados críticos.\n- Auditoria e conciliação de históricos financeiros (pagamentos e cobranças) e status de filiação dos associados, mitigando falhas de conformidade antes da exportação dos dados.\n- Digitalização de documentos físicos e normalização de dados para importação automatizada em sistemas.\n- Comunicação com clientes via WhatsApp para verificar e corrigir inconsistências de dados e solicitar informações faltantes ou atualizadas.\n- Garantia de integridade e precisão em dados sensíveis sob exigência regulatória.`
