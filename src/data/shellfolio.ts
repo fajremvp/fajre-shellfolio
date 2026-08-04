@@ -154,6 +154,12 @@ export const data: PortfolioData = {
         file: "S4F3-C0D3S",
         link: "https://github.com/fajremvp/S4F3-C0D3S",
         content: "Developed a 2FA code manager in Java. Implemented AES-256-GCM encryption with PBKDF2+HMAC-SHA256 key derivation and random salts. Architecture includes brute-force defense (delays), memory clearing of sensitive data, and secure destruction by overwriting in case of tampering or multiple authentication failures."
+      },
+      {
+        perms: "drwxr-xr-x",
+        file: "cantina-udesc-doo2",
+        link: "https://github.com/fajremvp/cantina-udesc-doo2",
+        content: `System developed as an extension project for the Object-Oriented Programming II course at UDESC.\nDeveloped as a team, a Java desktop order and reservation management system using the MVC architecture, aiming to digitize the university cafeteria's order workflow and replace paper-based processes and WhatsApp communication, proposing a solution to improve service organization during peak hours and demand and inventory management.\nThe project followed collaborative development practices, using Kanban for task management and Git Flow for version control. Implemented data persistence with JPA/Hibernate and SQLite, along with continuous integration (CI) pipelines using GitHub Actions.`
       }
     ],
     education: [
@@ -273,6 +279,12 @@ export const data: PortfolioData = {
         file: "S4F3-C0D3S",
         link: "https://github.com/fajremvp/S4F3-C0D3S",
         content: "Desenvolvi um gerenciador de códigos 2FA em Java. Implementei criptografia AES-256-GCM com derivação de chave PBKDF2+HMAC-SHA256 e salts aleatórios. A arquitetura inclui defesa contra força bruta (delays), limpeza de memória de dados sensíveis e destruição segura por sobrescrita em caso de adulteração ou múltiplas falhas de autenticação."
+      },
+      {
+        perms: "drwxr-xr-x",
+        file: "cantina-udesc-doo2",
+        link: "https://github.com/fajremvp/cantina-udesc-doo2",
+        content: `Sistema desenvolvido como projeto de extensão da disciplina de Programação Orientada a Objetos II da UDESC.\nDesenvolvemos em equipe um sistema desktop de gerenciamento de pedidos e reservas em Java utilizando arquitetura MVC, com o objetivo de digitalizar o fluxo de pedidos da cantina universitária e substituir processos baseados em papel e WhatsApp, propondo uma solução para melhorar a organização do atendimento em horários de pico e o controle de demanda e estoque.\nO projeto seguiu práticas colaborativas de desenvolvimento, utilizando Kanban para gerenciamento de tarefas e Git Flow para controle de versão. Implementamos a persistência de dados com JPA/Hibernate e SQLite, além de pipelines de integração contínua (CI) com GitHub Actions.`
       }
     ],
     education: [
