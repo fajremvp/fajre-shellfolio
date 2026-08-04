@@ -147,7 +147,7 @@ export const data: PortfolioData = {
         perms: "lrwxrwxrwx",
         file: "dotfiles",
         link: "https://github.com/fajremvp/dotfiles",
-        content: "I maintained and automated my previous Linux development environment using custom configurations managed with Chezmoi and Git, ensuring version control, portability, and fast provisioning through an Infrastructure as Code approach for the desktop. Although I have since moved to the declarative ecosystem of NixOS, this repository reflects my deep dive into imperative system automation and Wayland customization. The repository includes Shell scripts for resource monitoring, system tuning, and interactive terminal-based utilities, helping standardize workflows across an Arch Linux setup running Hyprland."
+        content: `Maintained the automation and management of my personal Linux environment using Chezmoi and Git, ensuring versioning, portability, and fast provisioning of system configurations.\nThe project automates the customization of an Arch Linux desktop with Hyprland, including Shell scripts, system parameter adjustments, and interactive terminal interfaces.\nAlthough I later migrated to the declarative NixOS model, this repository represents my experience with imperative automation, configuration management, and advanced Linux environment customization.`
       },
       {
         perms: "drwxr-xr-x",
@@ -272,7 +272,7 @@ export const data: PortfolioData = {
         perms: "lrwxrwxrwx",
         file: "dotfiles",
         link: "https://github.com/fajremvp/dotfiles",
-        content: "Mantive a automação e gestão do meu antigo ambiente de desenvolvimento Linux com configurações próprias, usando Chezmoi e Git para garantir versionamento, portabilidade e provisionamento rápido (IaC para desktop). Embora eu tenha migrado para o mundo declarativo do NixOS, este repositório representa meu mergulho profundo na automação imperativa de sistemas e customização do Wayland. O repositório inclui scripts em Shell para monitoramento de recursos, ajuste de parâmetros do sistema e interfaces interativas via terminal, padronizando workflows em Arch Linux com Hyprland."
+        content: `Mantive a automação e gestão do meu ambiente pessoal Linux utilizando Chezmoi e Git, garantindo versionamento, portabilidade e provisionamento rápido das configurações do sistema.\nO projeto automatiza a personalização de um desktop Arch Linux com Hyprland, incluindo scripts em Shell, ajustes de parâmetros do sistema e interfaces interativas via terminal.\nEmbora posteriormente tenha migrado para o modelo declarativo do NixOS, este repositório representa minha experiência com automação imperativa, gerenciamento de configurações e customização avançada de ambientes Linux.`
       },
       {
         perms: "drwxr-xr-x",
