@@ -100,7 +100,7 @@ export const data: PortfolioData = {
       Kernel: "Linux 6.18.26",
       Shell: "bash 5.3.9",
       WM: "niri 26.04 (Wayland)",
-      about: `Infrastructure and DevOps Engineer, passionate about open-source and decentralized systems.\nInterests: Security, Privacy, Linux, Self-Hosting, AI, and Economics.\n“I use Nix, btw.”`
+      about: `Software Engineering student focused on Infrastructure, DevOps, and Security.\nInterests: Linux, Privacy, Self-Hosting, Open Source, Decentralized Systems, AI, and Economics.\n“I use Nix, btw.”`
     },
     experiences: [
       {
@@ -220,7 +220,7 @@ export const data: PortfolioData = {
       Kernel: "Linux 6.18.26",
       Shell: "bash 5.3.9",
       WM: "niri 26.04 (Wayland)",
-      about: `Engenheiro de Infraestrutura e DevOps, entusiasta de open-source e sistemas descentralizados.\nInteresses: Segurança, Privacidade, Linux, Auto-Hospedagem, IA e Economia.\n"I use Nix, btw"`
+      about: `Estudante de Engenharia de Software com foco em Infraestrutura, DevOps e Segurança.\nInteresses: Linux, Privacidade, Self-Hosting, Open Source, Sistemas Descentralizados, IA e Economia.\n“I use Nix, btw.”`
     },
     experiences: [
       {
