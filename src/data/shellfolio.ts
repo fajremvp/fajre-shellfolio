@@ -141,7 +141,7 @@ export const data: PortfolioData = {
         perms: "-rwxr-xr-x",
         file: "HyprRun",
         link: "https://github.com/fajremvp/HyprRun",
-        content: "I built a minimalist application launcher in Bash designed specifically for dynamic tiling window managers such as Hyprland, Niri, and Sway. It leverages fzf for fast fuzzy searching directly from the terminal, avoiding floating windows and the overhead of graphical interfaces. The result is a keyboard-driven workflow with zero GUI overhead that keeps workspaces clean and stays true to the tiling philosophy."
+        content: `Developed a minimalist application launcher in Bash specifically designed for tiling window managers such as Hyprland, Niri, and Sway.\nIntegrated fzf for fast fuzzy search through the terminal, creating a keyboard-driven workflow without floating windows or unnecessary graphical overhead. The project follows the tiling philosophy by keeping workspaces clean and efficient.`
       },
       {
         perms: "lrwxrwxrwx",
@@ -266,7 +266,7 @@ export const data: PortfolioData = {
         perms: "-rwxr-xr-x",
         file: "HyprRun",
         link: "https://github.com/fajremvp/HyprRun",
-        content: "Criei um launcher de aplicações minimalista em Bash projetado especificamente para tiling window managers dinâmicos como Hyprland, Niri e Sway. Integrei o fzf para busca fuzzy de alta performance via terminal, evitando janelas flutuantes e a sobrecarga de interfaces gráficas. O resultado é um workflow focado no teclado, com zero overhead de interface gráfica, que mantém os workspaces limpos e respeita a filosofia tiling."
+        content: `Desenvolvi um launcher de aplicações minimalista em Bash projetado especificamente para tiling window managers como Hyprland, Niri e Sway.\nIntegrei o fzf para busca fuzzy rápida pelo terminal, criando um fluxo de trabalho focado no teclado sem janelas flutuantes ou sobrecarga gráfica desnecessária. O projeto segue a filosofia tiling mantendo os workspaces limpos e eficientes.`
       },
       {
         perms: "lrwxrwxrwx",
