@@ -129,7 +129,7 @@ export const data: PortfolioData = {
         perms: "drwxr-xr-x",
         file: "nixos-config",
         link: "https://github.com/fajremvp/nixos-config",
-        content: `My ultimate "OS as Code" architecture. This repository brings the Infrastructure as Code (IaC) mindset to the desktop through a fully declarative configuration powered by Nix Flakes and Home Manager. It eliminates "ClickOps" and system drift entirely, providing instant reproducibility on any machine, immutability, reliable rollbacks, and a Single Source of Truth (SSOT) for my networking, packages, drivers, and dotfiles.`
+        content: `I maintain a declarative NixOS configuration using Nix Flakes and Home Manager, applying Infrastructure as Code (IaC) concepts directly to the desktop environment.\nThe project automates operating system management, packages, drivers, and personal configurations, eliminating manual processes while ensuring reproducibility, versioning, and recovery through rollbacks.\nThe architecture follows the "OS as Code" concept, maintaining a Single Source of Truth (SSOT) for the entire Linux environment.`
       },
       {
         perms: "drwxr-xr-x",
@@ -254,7 +254,7 @@ export const data: PortfolioData = {
         perms: "drwxr-xr-x",
         file: "nixos-config",
         link: "https://github.com/fajremvp/nixos-config",
-        content: `Minha arquitetura definitiva de "OS as Code". Este repositório aplica a filosofia de Infraestrutura como Código (IaC) direto no desktop de forma declarativa usando Nix Flakes e Home Manager. O projeto elimina completamente "ClickOps" e a degradação do sistema, garantindo reprodutibilidade instantânea em qualquer hardware, imutabilidade, rollbacks à prova de falhas e um Single Source of Truth (SSOT) para toda a minha rede, pacotes, drivers e dotfiles.`
+        content: `Mantenho uma configuração declarativa do NixOS utilizando Nix Flakes e Home Manager, aplicando conceitos de Infrastructure as Code (IaC) diretamente no ambiente desktop.\nO projeto automatiza o gerenciamento do sistema operacional, pacotes, drivers e configurações pessoais, eliminando processos manuais e garantindo reprodutibilidade, versionamento e recuperação através de rollbacks.\nA arquitetura segue o conceito de "OS as Code", mantendo um Single Source of Truth (SSOT) para toda a configuração do ambiente Linux.`
       },
       {
         perms: "drwxr-xr-x",
