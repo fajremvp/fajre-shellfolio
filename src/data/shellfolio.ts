@@ -135,7 +135,7 @@ export const data: PortfolioData = {
         perms: "drwxr-xr-x",
         file: "shellfolio",
         link: "https://github.com/fajremvp/shellfolio",
-        content: `Minimalist portfolio template built with Astro.js, focused on high performance and TUI (Terminal User Interface) aesthetics. It simulates a realistic Unix terminal environment in the browser, featuring a dynamic systemd-inspired boot sequence, log syntax highlighting, and faithful typographic rendering for developers, sysadmins, and Linux enthusiasts seeking a nostalgic and authentic visual identity.`
+        content: `Developed a minimalist portfolio template using Astro.js, inspired by TUI (Terminal User Interface) interfaces and Linux environments.\nThe project simulates a Unix terminal experience in the browser, featuring a systemd-inspired boot animation, optimized typography for developers, and a modular TypeScript-based structure.\nThe goal is to combine high performance, simplicity, and a nostalgic visual identity for developers, sysadmins, and Linux enthusiasts.`
       },
       {
         perms: "-rwxr-xr-x",
@@ -260,7 +260,7 @@ export const data: PortfolioData = {
         perms: "drwxr-xr-x",
         file: "shellfolio",
         link: "https://github.com/fajremvp/shellfolio",
-        content: `Template do meu portfólio minimalista construído com Astro.js, focado em alta performance e estética TUI (Terminal User Interface). Ele simula um ambiente de terminal Unix realista no navegador, incluindo uma sequência de boot dinâmica inspirada no systemd, sintaxe highlight de logs e renderização tipográfica fiel para desenvolvedores, sysadmins e entusiastas Linux que buscam uma identidade visual nostálgica e autêntica.`
+        content: `Desenvolvi um template de portfólio minimalista utilizando Astro.js, inspirado em interfaces TUI (Terminal User Interface) e ambientes Linux.\nO projeto simula uma experiência de terminal Unix no navegador, com animação de boot inspirada no systemd, renderização tipográfica otimizada para desenvolvedores e uma estrutura modular baseada em TypeScript.\nO objetivo é unir alta performance, simplicidade e uma identidade visual nostálgica para desenvolvedores, sysadmins e entusiastas Linux.`
       },
       {
         perms: "-rwxr-xr-x",
