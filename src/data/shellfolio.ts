@@ -153,7 +153,7 @@ export const data: PortfolioData = {
         perms: "drwxr-xr-x",
         file: "S4F3-C0D3S",
         link: "https://github.com/fajremvp/S4F3-C0D3S",
-        content: "Developed a 2FA code manager in Java. Implemented AES-256-GCM encryption with PBKDF2+HMAC-SHA256 key derivation and random salts. Architecture includes brute-force defense (delays), memory clearing of sensitive data, and secure destruction by overwriting in case of tampering or multiple authentication failures."
+        content: `Developed a 2FA code manager in Java with a graphical interface built using Swing.\nImplemented security mechanisms such as AES-256-GCM encryption, PBKDF2+HMAC-SHA256 key derivation, random salts, and brute-force protection. The application also includes sensitive data protection in memory and secure information destruction in cases of tampering or multiple authentication failures.`
       },
       {
         perms: "drwxr-xr-x",
@@ -278,7 +278,7 @@ export const data: PortfolioData = {
         perms: "drwxr-xr-x",
         file: "S4F3-C0D3S",
         link: "https://github.com/fajremvp/S4F3-C0D3S",
-        content: "Desenvolvi um gerenciador de códigos 2FA em Java. Implementei criptografia AES-256-GCM com derivação de chave PBKDF2+HMAC-SHA256 e salts aleatórios. A arquitetura inclui defesa contra força bruta (delays), limpeza de memória de dados sensíveis e destruição segura por sobrescrita em caso de adulteração ou múltiplas falhas de autenticação."
+        content: `Desenvolvi um gerenciador de códigos 2FA em Java com interface gráfica construída utilizando Swing.\nImplementei mecanismos de segurança como criptografia AES-256-GCM, derivação de chave com PBKDF2+HMAC-SHA256, uso de salts aleatórios e proteção contra tentativas de força bruta. A aplicação também conta com práticas de proteção de dados sensíveis em memória e destruição segura de informações em casos de adulteração ou múltiplas falhas de autenticação.`
       },
       {
         perms: "drwxr-xr-x",
