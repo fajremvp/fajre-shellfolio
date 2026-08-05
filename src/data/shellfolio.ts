@@ -171,27 +171,27 @@ export const data: PortfolioData = {
     skills: [
       {
         category: "Infrastructure & Virtualization",
-        items: "Linux (Debian, Alpine, Arch, NixOS), Proxmox VE, LXC, ZFS, Docker, Systemd, LUKS2, Dropbear (Initramfs SSH), NUT."
+        items: "Linux (Debian, Alpine, Arch, NixOS), Proxmox VE, Docker, LXC, ZFS, Systemd"
       },
       {
-        category: "DevOps & Automation (IaC)",
-        items: "Ansible, Jinja2, Docker Compose, Shell Scripting, Cloud-Init, Chezmoi, Restic, Backblaze B2, GitOps, CI/CD Pipelines, Shift-Left Security, Pre-Commit Hooks, Code Quality Gates."
+        category: "DevOps & Infrastructure as Code (IaC)",
+        items: "Ansible, GitOps, Docker Compose, Shell Scripting, Cloud-Init, CI/CD"
       },
       {
-        category: "Security & Identity (Zero Trust)",
-        items: "HashiCorp Vault, Mozilla SOPS, age encryption, Authentik, CrowdSec, Fail2Ban, Socket Proxy, PKI (internal CA), SSH hardening."
+        category: "Security & Identity",
+        items: "Zero Trust, HashiCorp Vault, SOPS + age, Authentik, CrowdSec, Fail2Ban"
       },
       {
         category: "Networking & Connectivity",
-        items: "OPNsense, VLANs, Traefik, Tailscale, DNS (AdGuard Home/Split-Horizon), Tor (Hidden Services), Network Debugging (tcpdump/nmap), P2P Sync (Syncthing), Edge Computing."
+        items: "OPNsense, VLANs, Traefik, Tailscale, DNS, Tor"
       },
       {
         category: "Observability",
-        items: "Prometheus, Loki, Grafana, Alloy, Alertmanager, Ntfy, Node Exporter, SRE Methodologies (U.S.E. / R.E.D.), Passive Monitoring (Healthchecks.io)."
+        items: "Prometheus, Loki, Grafana, Alloy, Alertmanager, Ntfy"
       },
       {
         category: "Development & Data",
-        items: "Java, Python, Bash, Nix, PostgreSQL, SQLite, Regex, Git."
+        items: "Java, Python, Bash, Nix, PostgreSQL, SQLite, Git"
       }
     ],
     remotes: [
@@ -299,27 +299,27 @@ export const data: PortfolioData = {
     skills: [
       {
         category: "Infraestrutura & Virtualização",
-        items: "Linux (Debian, Alpine, Arch, NixOS), Proxmox VE, LXC, ZFS, Docker, Systemd, LUKS2, Dropbear (Initramfs SSH), NUT."
+        items: "Linux (Debian, Alpine, Arch, NixOS), Proxmox VE, Docker, LXC, ZFS, Systemd"
       },
       {
-        category: "DevOps & Automação (IaC)",
-        items: "Ansible, Jinja2, Docker Compose, Shell Scripting, Cloud-Init, Chezmoi, Restic, Backblaze B2, GitOps, CI/CD Pipelines, Shift-Left Security, Pre-Commit Hooks, Code Quality Gates."
+        category: "DevOps & Infrastructure as Code (IaC)",
+        items: "Ansible, GitOps, Docker Compose, Shell Scripting, Cloud-Init, CI/CD"
       },
       {
-        category: "Segurança & Identidade (Zero Trust)",
-        items: "HashiCorp Vault, Mozilla SOPS, age encryption, Authentik, CrowdSec, Fail2Ban, Socket Proxy, PKI (internal CA), SSH hardening."
+        category: "Segurança & Identidade",
+        items: "Zero Trust, HashiCorp Vault, SOPS + age, Authentik, CrowdSec, Fail2Ban"
       },
       {
         category: "Redes & Conectividade",
-        items: "OPNsense, VLANs, Traefik, Tailscale, DNS (AdGuard Home/Split-Horizon), Tor (Hidden Services), Network Debugging (tcpdump/nmap), P2P Sync (Syncthing), Edge Computing."
+        items: "OPNsense, VLANs, Traefik, Tailscale, DNS, Tor"
       },
       {
         category: "Observabilidade",
-        items: "Prometheus, Loki, Grafana, Alloy, Alertmanager, Ntfy, Node Exporter, SRE Methodologies (U.S.E. / R.E.D.), Passive Monitoring (Healthchecks.io)."
+        items: "Prometheus, Loki, Grafana, Alloy, Alertmanager, Ntfy"
       },
       {
         category: "Desenvolvimento & Dados",
-        items: "Java, Python, Bash, Nix, PostgreSQL, SQLite, Regex, Git."
+        items: "Java, Python, Bash, Nix, PostgreSQL, SQLite, Git"
       }
     ],
     remotes: [
