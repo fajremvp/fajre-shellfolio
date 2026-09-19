@@ -105,6 +105,13 @@ export const data: PortfolioData = {
     experiences: [
       {
         perms: "drwxr-xr-x",
+        date: "Sep/2026-Present",
+        company: "UDESC",
+        folder: "Undergraduate Research Fellow",
+        content: `Undergraduate Research Fellow in the research project "Projeto Automático de Algoritmos", with a work plan focused on Complex Network Analysis.\nI work on modeling and analyzing interaction networks between characters in fictional narratives, structuring datasets and building graphs for computational analysis using Python, Pandas, NetworkX, and Jupyter.\nThe research involves network science, centrality metrics, community detection, density, degree distributions, and cohesion. I am also currently studying signed interaction networks and structural balance theory, along with experimental research methodology and scientific writing.`
+      },
+      {
+        perms: "drwxr-xr-x",
         date: "Apr/2026-Jul/2026",
         company: "Honorato & Bini Advogados Associados",
         folder: "Data and Document Management Assistant",
@@ -112,7 +119,7 @@ export const data: PortfolioData = {
       },
       {
         perms: "drwxr-xr-x",
-        date: "Apr/2025-Dez/2025",
+        date: "Apr/2025-Dec/2025",
         company: "UDESC",
         folder: "Scholarship Holder",
         content: "Worked at the Robotics Laboratory (LABOT) on extension projects focused on digital inclusion, teaching workshops to empower the elderly in using smartphones and technology, as well as educational robotics classes for children with playful and interactive activities to stimulate logical reasoning."
@@ -191,7 +198,7 @@ export const data: PortfolioData = {
       },
       {
         category: "Development & Data",
-        items: "Java, Python, Bash, Nix, PostgreSQL, SQLite, Git"
+        items: "Python, Java, Bash, Nix, PostgreSQL, SQLite, Git"
       }
     ],
     remotes: [
@@ -228,6 +235,13 @@ export const data: PortfolioData = {
       about: `Estudante de Engenharia de Software com foco em Infraestrutura, DevOps e Segurança.\nInteresses: Linux, Privacidade, Self-Hosting, Open Source, Sistemas Descentralizados, IA e Economia.\n“I use Nix, btw.”`
     },
     experiences: [
+      {
+        perms: "drwxr-xr-x",
+        date: "Set/2026-Presente",
+        company: "UDESC",
+        folder: "Bolsista de Iniciacao Cientifica",
+        content: `Bolsista de Iniciação Científica no projeto de pesquisa "Projeto Automático de Algoritmos", com plano de trabalho em Análise de Redes Complexas.\nAtuo na modelagem e análise de redes de interação entre personagens de narrativas ficcionais, estruturando datasets e construindo grafos para análise computacional com Python, Pandas, NetworkX e Jupyter.\nA pesquisa envolve ciência de redes, métricas de centralidade, detecção de comunidades, densidade, distribuição de graus e coesão. Atualmente também estudo redes de interação assinadas e teoria de balanço estrutural, além de metodologia experimental e produção científica.`
+      },
       {
         perms: "drwxr-xr-x",
         date: "Abr/2026-Jul/2026",
@@ -319,7 +333,7 @@ export const data: PortfolioData = {
       },
       {
         category: "Desenvolvimento & Dados",
-        items: "Java, Python, Bash, Nix, PostgreSQL, SQLite, Git"
+        items: "Python, Java, Bash, Nix, PostgreSQL, SQLite, Git"
       }
     ],
     remotes: [
