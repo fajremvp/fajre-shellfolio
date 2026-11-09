@@ -72,7 +72,7 @@ export interface PortfolioData {
 // --- Data ---
 export const contactLinks = [
   { protocol: "mailto", handle: "fajre.eastcoast399@aleeas.com", url: "mailto:fajre.eastcoast399@aleeas.com" },
-  { protocol: "linkedin", handle: "in/joaovfdo", url: "https://linkedin.com/in/joaovfdo" },
+  { protocol: "linkedin", handle: "in/joaofogaça", url: "https://linkedin.com/in/joaofogaça" },
   { protocol: "youtube", handle: "@fajremvp", url: "https://www.youtube.com/@fajremvp" },
   { protocol: "reddit", handle: "u/FajreMVP", url: "https://www.reddit.com/user/FajreMVP" },
   { protocol: "nostr", handle: "npub1dykmduj9qepw44zcwqah0wvxftzvd0escfrqqrxjhawd8c8mzagqgxfysu" },
