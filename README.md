@@ -1,7 +1,20 @@
 # 🖥️ Fajre's shellfolio
 
-Source code for my personal portfolio, live at [fajre.pages.dev](https://fajre.pages.dev).
+## ⚠️ Deprecated / Archived
 
-Built with Astro.js. If you like the TUI (Terminal User Interface) aesthetic, I have released the underlying architecture as a free, open-source template.
+This repository is no longer maintained.
 
-👉 **Get the template here:** [fajremvp/shellfolio](https://github.com/fajremvp/shellfolio)
+Final state: Personal portfolio built with Astro and the shellfolio template, preserved before migration.
+
+New website:
+- Website: https://joaofogaca.com
+- GitHub: https://github.com/fajremvp/joaofogaca.com
+- Codeberg: https://codeberg.org/Fajre/joaofogaca.com
+
+Archived demo: https://fajre.pages.dev
+
+---
+
+This repository contains the source code of my former personal portfolio.
+
+The underlying open-source template is available at [fajremvp/shellfolio](https://github.com/fajremvp/shellfolio).
